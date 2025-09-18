@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaStore - Bộ Sưu Tập Nước Hoa Cao Cấp</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="font-family: 'Playfair Display', serif;">
+                <i class="fas fa-spa me-2"></i>SpaStore
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Cửa hàng</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shop.html?filter=men">Nước hoa nam</a></li>
+                            <li><a class="dropdown-item" href="shop.html?filter=women">Nước hoa nữ</a></li>
+                            <li><a class="dropdown-item" href="shop.html?filter=unisex">Nước hoa unisex</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brands">Thương hiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">
+                        <i class="fas fa-user"></i> Tài khoản
+                    </a>
+                    <a href="#" class="btn btn-outline-light">
+                        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+                        Bạn xứng đáng được hạnh phúc
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Chào mừng bạn đến với SpaStore – một không gian sang trọng nơi bạn có thể "trải nghiệm" các
+                        hương thơm khác nhau theo concept của một quán bar nước hoa.
+                    </p>
+                    <a href="#brands" class="btn btn-primary btn-lg me-3">Khám phá bộ sưu tập</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg">Tìm hiểu thêm</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-spa hero-icon text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Famous Brands Section -->
+    <section id="brands" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Thương hiệu nổi tiếng</h2>
+                <p class="lead">Khám phá các hương thơm cao cấp từ những nhà nước hoa nổi tiếng thế giới</p>
+            </div>
+
+            <!-- Brand Slider -->
+            <div class="brands-slider-container mb-5">
+                <div class="swiper brands-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Clive Christian</h4>
+                                    <p class="text-muted small">Luxury British Perfumes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Ex Nihilo</h4>
+                                    <p class="text-muted small">Contemporary French Fragrance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Xerjoff</h4>
+                                    <p class="text-muted small">Italian Artisan Perfumes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Creed</h4>
+                                    <p class="text-muted small">Royal English Crown Perfumer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Penhaligons</h4>
+                                    <p class="text-muted small">British Heritage Perfumery</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Le Labo</h4>
+                                    <p class="text-muted small">Artisanal New York Fragrances</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Nasomatto</h4>
+                                    <p class="text-muted small">Dutch Creative Perfumery</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Maison Francis Kurkdjian</h4>
+                                    <p class="text-muted small">French Haute Parfumerie</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Tom Ford</h4>
+                                    <p class="text-muted small">American Luxury Fragrances</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-slide-card">
+                                <div class="brand-logo">
+                                    <h4 class="fw-bold">Byredo</h4>
+                                    <p class="text-muted small">Swedish Modern Perfumery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation arrows -->
+                <div class="swiper-button-next brands-next"></div>
+                <div class="swiper-button-prev brands-prev"></div>
+            </div>
+
+            <!-- Product Categories -->
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="category-card h-100">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-mars category-icon text-primary mb-3"></i>
+                                <h4 class="card-title">Nước hoa nam</h4>
+                                <p class="card-text">Những hương thơm tinh tế và nam tính dành cho quý ông hiện đại</p>
+                                <a href="#men-perfume" class="btn btn-primary">Khám phá</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category-card h-100">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-venus category-icon text-danger mb-3"></i>
+                                <h4 class="card-title">Nước hoa nữ</h4>
+                                <p class="card-text">Những mùi hương thanh lịch và quyến rũ dành cho người phụ nữ tinh
+                                    tế</p>
+                                <a href="#women-perfume" class="btn btn-danger">Khám phá</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category-card h-100">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-venus-mars category-icon text-success mb-3"></i>
+                                <h4 class="card-title">Nước hoa unisex</h4>
+                                <p class="card-text">Những hương thơm đa năng vượt qua ranh giới truyền thống</p>
+                                <a href="#unisex-perfume" class="btn btn-success">Khám phá</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Sản phẩm nổi bật</h2>
+                <p class="lead">Những hương thơm phổ biến và độc quyền nhất của chúng tôi</p>
+            </div>
+
+            <!-- Product Filter Tabs -->
+            <div class="text-center mb-4">
+                <ul class="nav nav-pills justify-content-center" id="productTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#all-products">Tất cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#men-products">Nam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#women-products">Nữ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#unisex-products">Unisex</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="all-products">
+                    <div class="row g-4">
+                        <!-- Product 1 - Men -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Creed</h6>
+                                        <h5 class="card-title">Aventus</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">7.900.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 - Women -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Tom Ford</h6>
+                                        <h5 class="card-title">Black Orchid</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">6.900.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 - Unisex -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Le Labo</h6>
+                                        <h5 class="card-title">Santal 33</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">4.890.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 - Women -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Maison Francis</h6>
+                                        <h5 class="card-title">Baccarat Rouge</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">8.290.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 - Men -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Dior</h6>
+                                        <h5 class="card-title">Sauvage</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">3.200.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 - Unisex -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Byredo</h6>
+                                        <h5 class="card-title">Gypsy Water</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">5.400.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 - Men -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Bleu de Chanel</h6>
+                                        <h5 class="card-title">Eau de Parfum</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">2.800.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 - Women -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Chanel</h6>
+                                        <h5 class="card-title">Coco Mademoiselle</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">3.500.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 - Unisex -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Diptyque</h6>
+                                        <h5 class="card-title">Philosykos</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">4.200.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 - Women -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Yves Saint Laurent</h6>
+                                        <h5 class="card-title">Black Opium</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">2.900.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 11 - Men -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Giorgio Armani</h6>
+                                        <h5 class="card-title">Acqua di Gio</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">2.400.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 12 - Unisex -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
+                                        style="height: 250px;">
+                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Hermès</h6>
+                                        <h5 class="card-title">Terre d'Hermès</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">3.800.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Tại sao chọn SpaStore</h2>
+                <p class="lead">Trải nghiệm nước hoa xa xỉ với dịch vụ đặc biệt</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div
+                            class="feature-icon bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-medal fa-2x"></i>
+                        </div>
+                        <h4>Thành viên thân thiết</h4>
+                        <p class="text-muted">Thành viên hạng vàng được giảm 5% và hạng bạc được giảm 3% trên mỗi đơn
+                            hàng. Thêm 2% giảm giá trong tháng sinh nhật.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div
+                            class="feature-icon bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-shipping-fast fa-2x"></i>
+                        </div>
+                        <h4>Free ship toàn quốc</h4>
+                        <p class="text-muted">SpaStore áp dụng freeship cho tất cả các khách hàng trên toàn quốc. Giao
+                            hàng nhanh chóng và an toàn đến tận nhà.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div
+                            class="feature-icon bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-certificate fa-2x"></i>
+                        </div>
+                        <h4>Sản phẩm chính hãng</h4>
+                        <p class="text-muted">Tất cả nước hoa được mua trực tiếp tại các store ở nước ngoài hoặc làm
+                            việc trực tiếp với các hãng. Cam kết authentic 100%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-2">Đăng ký thành viên để nhận khuyến mãi</h3>
+                    <p class="mb-0">Theo dõi chúng tôi để nhận nhiều ưu đãi độc quyền</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Nhập địa chỉ email của bạn">
+                        <button class="btn btn-light" type="button">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                        <i class="fas fa-spa me-2"></i>SpaStore
+                    </h5>
+                    <p class="text-light">Điểm đến cao cấp của bạn cho nước hoa xa xỉ chính hãng từ khắp nơi trên thế
+                        giới.</p>
+                    <p class="text-light">
+                        <i class="fas fa-envelope me-2"></i> spa.store@gmail.com<br>
+                        <i class="fas fa-phone me-2"></i> +84 (028) 123-4567
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Mua sắm</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Nước hoa nam</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Nước hoa nữ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Nước hoa unisex</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Bộ quà tặng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Dịch vụ khách hàng</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Vận chuyển & Đổi trả</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Hướng dẫn kích thước</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Hướng dẫn bảo quản</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Vị trí cửa hàng</h6>
+                    <div class="text-light small">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Nguyễn Huệ, Quận 1, TP.HCM<br>
+                            Mở cửa: 9h - 21h</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 456 Hoàn Kiếm, Hà Nội<br>
+                            Mở cửa: 10h - 20h</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 SpaStore | All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
