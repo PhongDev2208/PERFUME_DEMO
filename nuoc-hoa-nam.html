@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nước Hoa Nam - SpaStore | Bộ Sưu Tập Nước Hoa Cao Cấp</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Shop-specific CSS -->
+    <link rel="stylesheet" href="assets/css/shop.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Playfair Display', serif;">
+                <img src="assets/images/LOGO01.png" alt="SpaStore" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Cửa hàng</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="nuoc-hoa-nam.html" target="_blank">Nước hoa
+                                    nam</a></li>
+                            <li><a class="dropdown-item" href="nuoc-hoa-nu.html" target="_blank">Nước hoa nữ</a></li>
+                            <li><a class="dropdown-item" href="nuoc-hoa-unisex.html" target="_blank">Nước hoa unisex</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#brands">Thương hiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">
+                        <i class="fas fa-user"></i> Tài khoản
+                    </a>
+                    <a href="#" class="btn btn-outline-light">
+                        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-header py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb text-white-50">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="shop.html" class="text-white-50">Cửa hàng</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Nước hoa nam</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                        <i class="fas fa-mars me-3 text-primary"></i>Nước Hoa Nam
+                    </h1>
+                    <p class="lead mb-4">
+                        Khám phá bộ sưu tập nước hoa nam cao cấp với những hương thơm tinh tế, nam tính và quyền lực.
+                        Từ những note tươi mát đến hương gỗ ấm áp, tìm mùi hương hoàn hảo thể hiện cá tính riêng của
+                        bạn.
+                    </p>
+                    <div class="d-flex align-items-center text-muted flex-wrap">
+                        <span class="me-4 mb-2">
+                            <i class="fas fa-box-open me-1"></i>
+                            <span id="total-products">8</span> sản phẩm
+                        </span>
+                        <span class="me-4 mb-2">
+                            <i class="fas fa-fire me-1"></i>
+                            Bestsellers
+                        </span>
+                        <span class="mb-2">
+                            <i class="fas fa-shield-alt me-1"></i>
+                            100% chính hãng
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="category-icon-large">
+                        <i class="fas fa-mars" style="font-size: 8rem; opacity: 0.1; color: #007bff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Filter & Sort Bar -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                <div class="filter-quick-actions d-flex gap-2 mb-3">
+                    <button class="btn btn-outline-secondary btn-sm filter-btn active" data-filter="all">
+                        Tất cả
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="fresh">
+                        Tươi mát
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="woody">
+                        Hương gỗ
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="spicy">
+                        Cay nồng
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm filter-btn" data-filter="luxury">
+                        Cao cấp
+                    </button>
+                </div>
+                <div class="sort-options d-flex align-items-center gap-3 mb-3">
+                    <span class="text-muted small">Sắp xếp:</span>
+                    <select class="form-select form-select-sm" id="sort-products" style="width: auto;">
+                        <option value="popularity">Phổ biến nhất</option>
+                        <option value="price-asc">Giá thấp đến cao</option>
+                        <option value="price-desc">Giá cao đến thấp</option>
+                        <option value="name-asc">Tên A-Z</option>
+                        <option value="newest">Mới nhất</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4 fw-bold">
+                        <i class="fas fa-star text-warning me-2"></i>Sản phẩm nổi bật
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4 mb-5" id="products-grid">
+                <!-- Product 1 - Creed Aventus -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="luxury spicy">
+                        <div class="card">
+                            <div class="product-image">
+                                <span class="product-badge">Bestseller</span>
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(1)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Creed</div>
+                                <h5 class="product-name">Aventus</h5>
+                                <p class="text-muted small mb-2">Hương thơm nam tính với note trái cây và gỗ quyền lực
+                                </p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDP 120ml</span>
+                                    <span class="product-feature">Long-lasting</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">7.900.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.9)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(1)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(1)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Dior Sauvage -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="fresh">
+                        <div class="card">
+                            <div class="product-image">
+                                <span class="product-badge">Popular</span>
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(2)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Dior</div>
+                                <h5 class="product-name">Sauvage</h5>
+                                <p class="text-muted small mb-2">Hương thơm tươi mát và nam tính đầy sức hút</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDT 100ml</span>
+                                    <span class="product-feature">Fresh</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">3.200.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star-half-alt text-warning"></i>
+                                        <span class="text-muted small">(4.7)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(2)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(2)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 - Bleu de Chanel -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="fresh luxury">
+                        <div class="card">
+                            <div class="product-image">
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(3)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Chanel</div>
+                                <h5 class="product-name">Bleu de Chanel</h5>
+                                <p class="text-muted small mb-2">Hương thơm tinh tế và lịch lãm cho quý ông</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDP 100ml</span>
+                                    <span class="product-feature">Elegant</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">2.800.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.8)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(3)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(3)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 - Giorgio Armani Acqua di Gio -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="fresh">
+                        <div class="card">
+                            <div class="product-image">
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(4)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Giorgio Armani</div>
+                                <h5 class="product-name">Acqua di Gio</h5>
+                                <p class="text-muted small mb-2">Hương biển tươi mát và sạch sẽ</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDT 100ml</span>
+                                    <span class="product-feature">Aquatic</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">2.400.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.6)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(4)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(4)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 - Creed Silver Mountain Water -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="fresh luxury">
+                        <div class="card">
+                            <div class="product-image">
+                                <span class="product-badge limited">Limited</span>
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(5)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Creed</div>
+                                <h5 class="product-name">Silver Mountain Water</h5>
+                                <p class="text-muted small mb-2">Hương thơm trong trẻo như dòng suối núi</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDP 100ml</span>
+                                    <span class="product-feature">Limited</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">6.500.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.9)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(5)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(5)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 - YSL La Nuit de L'Homme -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="spicy">
+                        <div class="card">
+                            <div class="product-image">
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(6)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">YSL</div>
+                                <h5 class="product-name">La Nuit de L'Homme</h5>
+                                <p class="text-muted small mb-2">Hương thơm gợi cảm cho đêm</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDT 100ml</span>
+                                    <span class="product-feature">Seductive</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">2.700.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.5)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(6)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(6)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 - Hermès Terre d'Hermès -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="woody luxury">
+                        <div class="card">
+                            <div class="product-image">
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(7)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Hermès</div>
+                                <h5 class="product-name">Terre d'Hermès</h5>
+                                <p class="text-muted small mb-2">Hương đất và gỗ tinh tế</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDT 100ml</span>
+                                    <span class="product-feature">Woody</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">3.800.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.8)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(7)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(7)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 - Dolce & Gabbana The One -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card" data-category="spicy">
+                        <div class="card">
+                            <div class="product-image">
+                                <i class="fas fa-spray-can"></i>
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary btn-sm" onclick="quickView(8)">
+                                        <i class="fas fa-eye me-1"></i>Xem nhanh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-brand">Dolce & Gabbana</div>
+                                <h5 class="product-name">The One</h5>
+                                <p class="text-muted small mb-2">Hương thơm lịch lãm và ấm áp</p>
+                                <div class="product-features mb-3">
+                                    <span class="product-feature">EDP 100ml</span>
+                                    <span class="product-feature">Sophisticated</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="product-price">2.500.000 ₫</span>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <span class="text-muted small">(4.4)</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <button class="btn btn-add-cart" onclick="addToCart(8)">
+                                        <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                    </button>
+                                    <button class="btn btn-favorite" onclick="toggleFavorite(8)" title="Yêu thích">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recently Viewed Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4 fw-bold">
+                        <i class="fas fa-history text-secondary me-2"></i>Sản phẩm đã xem
+                    </h3>
+                    <div class="recently-viewed-slider">
+                        <div class="row g-3" id="recently-viewed">
+                            <!-- Recently viewed products will be populated by JavaScript -->
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="product-card-small">
+                                    <div class="card">
+                                        <div class="product-image-small">
+                                            <i class="fas fa-spray-can"></i>
+                                        </div>
+                                        <div class="card-body p-2">
+                                            <div class="text-muted small">Creed</div>
+                                            <h6 class="card-title small mb-1">Aventus</h6>
+                                            <div class="text-primary small fw-bold">7.900.000 ₫</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="product-card-small">
+                                    <div class="card">
+                                        <div class="product-image-small">
+                                            <i class="fas fa-spray-can"></i>
+                                        </div>
+                                        <div class="card-body p-2">
+                                            <div class="text-muted small">Dior</div>
+                                            <h6 class="card-title small mb-1">Sauvage</h6>
+                                            <div class="text-primary small fw-bold">3.200.000 ₫</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Similar Fragrances Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4 fw-bold">
+                        <i class="fas fa-magic text-info me-2"></i>Mùi hương tương tự
+                    </h3>
+                    <div class="similar-fragrances">
+                        <div class="row g-4" id="similar-fragrances">
+                            <!-- Similar fragrance cards -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="fragrance-similarity-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="similarity-icon me-3">
+                                                    <i class="fas fa-percent text-success"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Độ tương đồng: 85%</h6>
+                                                    <small class="text-muted">với Creed Aventus</small>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title">Armaf Club de Nuit</h5>
+                                            <p class="text-muted small">Hương thơm tương tự với giá cả phải chăng hơn
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">890.000 ₫</span>
+                                                <button class="btn btn-outline-primary btn-sm">Xem thêm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="fragrance-similarity-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="similarity-icon me-3">
+                                                    <i class="fas fa-percent text-warning"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Độ tương đồng: 78%</h6>
+                                                    <small class="text-muted">với Dior Sauvage</small>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title">Versace Dylan Blue</h5>
+                                            <p class="text-muted small">Note tươi mát tương tự, phong cách Địa Trung Hải
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">1.200.000 ₫</span>
+                                                <button class="btn btn-outline-primary btn-sm">Xem thêm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="fragrance-similarity-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="similarity-icon me-3">
+                                                    <i class="fas fa-percent text-info"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Độ tương đồng: 82%</h6>
+                                                    <small class="text-muted">với Bleu de Chanel</small>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title">Allure Homme Sport</h5>
+                                            <p class="text-muted small">Cùng nhà Chanel với phong cách thể thao hơn</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">2.500.000 ₫</span>
+                                                <button class="btn btn-outline-primary btn-sm">Xem thêm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="fragrance-similarity-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="similarity-icon me-3">
+                                                    <i class="fas fa-percent text-primary"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Độ tương đồng: 75%</h6>
+                                                    <small class="text-muted">với Acqua di Gio</small>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-title">Light Blue Pour Homme</h5>
+                                            <p class="text-muted small">Hương biển Địa Trung Hải tương tự</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-primary fw-bold">1.800.000 ₫</span>
+                                                <button class="btn btn-outline-primary btn-sm">Xem thêm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Information -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="category-info bg-light p-4 rounded">
+                        <h4 class="fw-bold mb-3">Về Nước Hoa Nam</h4>
+                        <p>Nước hoa nam là một phần không thể thiếu trong bộ sưu tập của mọi quý ông hiện đại. Từ những
+                            hương thơm tươi mát cho ngày hè đến những mùi hương ấm áp cho mùa đông, mỗi chai nước hoa
+                            đều mang trong mình một câu chuyện riêng.</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="fw-bold">Hương Tươi Mát (Fresh)</h6>
+                                <p class="small text-muted">Hoàn hảo cho ngày hè và môi trường văn phòng. Thường có note
+                                    citrus, biển và lá xanh.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bold">Hương Gỗ (Woody)</h6>
+                                <p class="small text-muted">Thể hiện sự nam tính và trưởng thành. Note chính từ gỗ đàn
+                                    hương, tuyết tùng, và các loại gỗ quý.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="fw-bold">Hương Cay Nồng (Spicy)</h6>
+                                <p class="small text-muted">Mang lại cảm giác quyến rũ và bí ẩn. Thường có note hạt
+                                    tiêu, quế, và các gia vị.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-2">Đăng ký thành viên để nhận khuyến mãi</h3>
+                    <p class="mb-0">Nhận thông tin về sản phẩm mới và ưu đãi độc quyền dành cho nước hoa nam</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Nhập địa chỉ email của bạn">
+                        <button class="btn btn-light" type="button">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                        <img src="assets/images/LOGO01.png" alt="SpaStore" height="32"
+                            class="d-inline-block align-text-top me-2">
+                    </h5>
+                    <p class="text-light">Điểm đến cao cấp của bạn cho nước hoa xa xỉ chính hãng từ khắp nơi trên thế
+                        giới.</p>
+                    <p class="text-light">
+                        <i class="fas fa-envelope me-2"></i> spa.store@gmail.com<br>
+                        <i class="fas fa-phone me-2"></i> +84 (028) 123-4567
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Mua sắm</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="nuoc-hoa-nam.html" class="text-light text-decoration-none">Nước hoa nam</a></li>
+                        <li><a href="nuoc-hoa-nu.html" class="text-light text-decoration-none">Nước hoa nữ</a></li>
+                        <li><a href="nuoc-hoa-unisex.html" class="text-light text-decoration-none">Nước hoa unisex</a>
+                        </li>
+                        <li><a href="shop.html" class="text-light text-decoration-none">Tất cả sản phẩm</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Dịch vụ khách hàng</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Vận chuyển & Đổi trả</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Hướng dẫn kích thước</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Hướng dẫn bảo quản</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Vị trí cửa hàng</h6>
+                    <div class="text-light small">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Nguyễn Huệ, Quận 1, TP.HCM<br>
+                            Mở cửa: 9h - 21h</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 456 Hoàn Kiếm, Hà Nội<br>
+                            Mở cửa: 10h - 20h</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 SpaStore | All rights reserved | <a href="index.html"
+                        class="text-light">Trang chủ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
