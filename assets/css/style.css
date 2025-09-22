@@ -1,10 +1,13 @@
 /* Custom CSS for SpaStore */
 
 :root {
-  --primary-color: #2c3e50;
+  --bs-primary: #6f42c1;
+  --bs-primary-rgb: 111, 66, 193;
+  --primary-color: #6f42c1;
+  --primary-hover: #5a32a3;
   --secondary-color: #e74c3c;
   --accent-color: #f39c12;
-  --text-color: #2c3e50;
+  --text-color: #333333;
   --light-bg: #f8f9fa;
   --dark-bg: #1a1a1a;
 }
@@ -14,6 +17,28 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: var(--text-color);
+}
+
+/* Bootstrap navbar-light styling enhancement */
+.navbar-light {
+  background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--text-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--primary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary-color) !important;
 }
 
 h1,
@@ -253,15 +278,28 @@ h6 {
 
 /* Footer */
 footer {
-  background-color: var(--dark-bg) !important;
+  background-color: #ffffff !important;
+  color: var(--text-color) !important;
+  border-top: 1px solid #e9ecef;
+}
+
+footer h5 {
+  color: var(--text-color) !important;
+}
+
+footer p,
+footer li,
+footer a {
+  color: var(--text-color) !important;
 }
 
 footer .social-links a {
+  color: var(--text-color) !important;
   transition: color 0.3s ease;
 }
 
 footer .social-links a:hover {
-  color: var(--accent-color) !important;
+  color: var(--primary-color) !important;
 }
 
 /* Responsive Adjustments */
@@ -277,43 +315,115 @@ footer .social-links a:hover {
   .feature-card {
     padding: 1rem;
   }
+
+  /* Mobile Button Spacing Fix - Bootstrap Compatible */
+  .hero-section .btn {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 1rem !important;
+    margin-right: 0 !important;
+  }
+
+  .hero-section .btn:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Alternative: Use Bootstrap flex utility classes in HTML */
+  .hero-section .d-flex {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
 }
 
-/* Custom Button Styles */
+/* Custom Button Styles - Bootstrap Compatible */
 .btn-primary {
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-bg: var(--primary-hover);
+  --bs-btn-hover-border-color: var(--primary-hover);
+  --bs-btn-active-bg: var(--primary-hover);
+  --bs-btn-active-border-color: var(--primary-hover);
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+  color: white !important;
   font-weight: 500;
   padding: 0.6rem 1.5rem;
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #1a252f;
-  border-color: #1a252f;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: white !important;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
 }
 
 .btn-outline-primary {
+  --bs-btn-color: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-hover-color: white;
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
-.btn-outline-primary:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
   transform: translateY(-2px);
 }
 
-/* Navigation Pills */
+/* Bootstrap outline-light button styling */
+.btn-outline-light {
+  --bs-btn-color: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-hover-color: white;
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+/* General button enhancements */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Navigation Pills - Bootstrap Compatible */
 .nav-pills .nav-link {
+  --bs-nav-pills-link-active-bg: var(--primary-color);
   color: var(--text-color);
   font-weight: 500;
 }
 
 .nav-pills .nav-link.active {
   background-color: var(--primary-color);
+  color: white !important;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  color: var(--primary-color);
+  background-color: rgba(111, 66, 193, 0.1);
 }
 
 /* Smooth Scrolling */
@@ -363,21 +473,40 @@ html {
   }
 }
 
-/* Dropdown Enhancements */
+/* Dropdown Enhancements - Bootstrap Compatible */
 .dropdown-menu {
+  --bs-dropdown-link-hover-bg: var(--light-bg);
+  --bs-dropdown-link-hover-color: var(--primary-color);
   border: none;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .dropdown-item {
   padding: 0.75rem 1.5rem;
   transition: background-color 0.3s ease;
+  color: var(--text-color) !important;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item:focus {
   background-color: var(--light-bg);
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
+}
+
+.dropdown-item.active {
+  background-color: var(--primary-color);
+  color: white !important;
+}
+
+/* Navbar toggler for light theme */
+.navbar-light .navbar-toggler {
+  border-color: var(--text-color);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* Product Filter Fixes */

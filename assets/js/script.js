@@ -57,16 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Navbar scroll effect
-  const navbar = document.querySelector(".navbar");
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-
   // Product filter functionality
   const filterButtons = document.querySelectorAll("#productTabs .nav-link");
   const products = document.querySelectorAll(".product-card");
@@ -274,8 +264,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Close mobile menu when clicking on a link
-  const mobileNavLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  // Close mobile menu when clicking on a link (but not dropdown toggles)
+  const mobileNavLinks = document.querySelectorAll(
+    ".navbar-nav .nav-link:not(.dropdown-toggle)"
+  );
   mobileNavLinks.forEach((link) => {
     link.addEventListener("click", function () {
       if (window.innerWidth < 992) {
@@ -335,12 +327,6 @@ style.textContent = `
             opacity: 1;
             transform: translateY(0);
         }
-    }
-    
-    .navbar.scrolled {
-        background-color: rgba(26, 26, 26, 0.95) !important;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     .animate-in {

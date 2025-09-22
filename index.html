@@ -22,10 +22,10 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Playfair Display', serif;">
-                <img src="assets/images/LOGO01.png" alt="SpaStore" height="40" class="d-inline-block align-text-top">
+                <img src="assets/images/LOGO01.png" alt="Iris Beauty" height="40" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -36,36 +36,39 @@
                         <a class="nav-link active" href="#home">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Cửa hàng</a>
+                        <a class="nav-link" href="#services">Dịch vụ</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
                             data-bs-toggle="dropdown">
-                            Sản phẩm
+                            Dịch vụ làm đẹp
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="nuoc-hoa-nam.html" target="_blank">Nước hoa nam</a></li>
-                            <li><a class="dropdown-item" href="nuoc-hoa-nu.html" target="_blank">Nước hoa nữ</a></li>
-                            <li><a class="dropdown-item" href="nuoc-hoa-unisex.html" target="_blank">Nước hoa unisex</a>
-                            </li>
+                            <li><a class="dropdown-item" href="#tri-mun">Trị mụn y khoa</a></li>
+                            <li><a class="dropdown-item" href="#tam-trang">Tắm trắng & Phun trắng 5in1</a></li>
+                            <li><a class="dropdown-item" href="#cay-collagen">Cấy collagen</a></li>
+                            <li><a class="dropdown-item" href="#phun-xam">Phun xăm dịch vụ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#brands">Thương hiệu</a>
+                        <a class="nav-link" href="#technology">Công nghệ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Giới thiệu</a>
+                        <a class="nav-link" href="#gallery">Hình ảnh khách hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#branches">Cơ sở gần nhất</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Liên hệ</a>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-outline-light me-2">
-                        <i class="fas fa-user"></i> Tài khoản
+                    <a href="#consultation" class="btn btn-outline-primary me-2">
+                        <i class="fas fa-calendar-check"></i> Đặt lịch
                     </a>
-                    <a href="#" class="btn btn-outline-light">
-                        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                    <a href="tel:18003333" class="btn btn-outline-primary">
+                        <i class="fas fa-phone"></i> 1800.3333
                     </a>
                 </div>
             </div>
@@ -78,14 +81,16 @@
             <div class="row min-vh-100 align-items-center">
                 <div class="col-lg-6">
                     <h1 class="display-3 fw-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
-                        Bạn xứng đáng được hạnh phúc
+                        💎 CHẠM TỚI VẺ ĐẸP HOÀN HẢO
                     </h1>
                     <p class="lead text-white mb-4">
-                        Chào mừng bạn đến với SpaStore – một không gian sang trọng nơi bạn có thể "trải nghiệm" các
-                        hương thơm khác nhau theo concept của một quán bar nước hoa.
+                        Hệ thống thẩm mỹ viện Iris Beauty với nhiều chi nhánh trên toàn quốc. Ưu đãi VIP - 50 suất đặc
+                        quyền dành cho khách hàng trong khu vực với công nghệ tiên tiến nhất.
                     </p>
-                    <a href="#brands" class="btn btn-primary btn-lg me-3">Khám phá bộ sưu tập</a>
-                    <a href="#about" class="btn btn-outline-light btn-lg">Tìm hiểu thêm</a>
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                        <a href="#services" class="btn btn-primary btn-lg">🏥 Đặt lịch tư vấn ngay</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">📞 Hotline: 1800.3333</a>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
@@ -96,95 +101,80 @@
         </div>
     </section>
 
-    <!-- Famous Brands Section -->
-    <section id="brands" class="py-5 bg-light">
+    <!-- Top Services Section -->
+    <section id="services" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Thương hiệu nổi tiếng</h2>
-                <p class="lead">Khám phá các hương thơm cao cấp từ những nhà nước hoa nổi tiếng thế giới</p>
+                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">TOP DỊCH VỤ ƯU ĐÃI TẠI
+                    IRIS BEAUTY</h2>
+                <p class="lead">Giảm sâu lên đến 50% - Chạm tới vẻ đẹp hoàn hảo với công nghệ hiện đại nhất</p>
             </div>
 
-            <!-- Brand Slider -->
+            <!-- Services Slider -->
             <div class="brands-slider-container mb-5">
                 <div class="swiper brands-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Clive Christian</h4>
-                                    <p class="text-muted small">Luxury British Perfumes</p>
+                                    <h4 class="fw-bold">Trị Mụn Y Khoa</h4>
+                                    <p class="text-muted small">Công nghệ DermaPerfecta</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Ex Nihilo</h4>
-                                    <p class="text-muted small">Contemporary French Fragrance</p>
+                                    <h4 class="fw-bold">Tắm Trắng 5in1</h4>
+                                    <p class="text-muted small">Công nghệ phun trắng toàn thân</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Xerjoff</h4>
-                                    <p class="text-muted small">Italian Artisan Perfumes</p>
+                                    <h4 class="fw-bold">Cấy Collagen</h4>
+                                    <p class="text-muted small">Trẻ hóa da từ sâu bên trong</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Creed</h4>
-                                    <p class="text-muted small">Royal English Crown Perfumer</p>
+                                    <h4 class="fw-bold">Phun Xăm Chân Mày</h4>
+                                    <p class="text-muted small">Điêu khắc chân mày 6D</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Penhaligons</h4>
-                                    <p class="text-muted small">British Heritage Perfumery</p>
+                                    <h4 class="fw-bold">Phun Xăm Môi</h4>
+                                    <p class="text-muted small">Collagen môi tự nhiên</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Le Labo</h4>
-                                    <p class="text-muted small">Artisanal New York Fragrances</p>
+                                    <h4 class="fw-bold">Meso Không Kim</h4>
+                                    <p class="text-muted small">Trẻ hóa da công nghệ Hàn Quốc</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Nasomatto</h4>
-                                    <p class="text-muted small">Dutch Creative Perfumery</p>
+                                    <h4 class="fw-bold">Nâng Cơ Mặt</h4>
+                                    <p class="text-muted small">Công nghệ Thermage FLX</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-slide-card">
                                 <div class="brand-logo">
-                                    <h4 class="fw-bold">Maison Francis Kurkdjian</h4>
-                                    <p class="text-muted small">French Haute Parfumerie</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-slide-card">
-                                <div class="brand-logo">
-                                    <h4 class="fw-bold">Tom Ford</h4>
-                                    <p class="text-muted small">American Luxury Fragrances</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-slide-card">
-                                <div class="brand-logo">
-                                    <h4 class="fw-bold">Byredo</h4>
-                                    <p class="text-muted small">Swedish Modern Perfumery</p>
+                                    <h4 class="fw-bold">Triệt Lông</h4>
+                                    <p class="text-muted small">Laser Diode 808nm</p>
                                 </div>
                             </div>
                         </div>
@@ -195,16 +185,17 @@
                 <div class="swiper-button-prev brands-prev"></div>
             </div>
 
-            <!-- Product Categories -->
+            <!-- Service Categories -->
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="category-card h-100">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center p-4">
-                                <i class="fas fa-mars category-icon text-primary mb-3"></i>
-                                <h4 class="card-title">Nước hoa nam</h4>
-                                <p class="card-text">Những hương thơm tinh tế và nam tính dành cho quý ông hiện đại</p>
-                                <a href="#men-perfume" class="btn btn-primary">Khám phá</a>
+                                <i class="fas fa-user-md category-icon text-primary mb-3"></i>
+                                <h4 class="card-title">Trị Liệu Da Mặt</h4>
+                                <p class="card-text">Trị mụn y khoa, làm sạch, trẻ hóa da với công nghệ tiên tiến nhất
+                                    từ Hàn Quốc</p>
+                                <a href="#facial-treatment" class="btn btn-primary">Đặt lịch ngay</a>
                             </div>
                         </div>
                     </div>
@@ -213,11 +204,11 @@
                     <div class="category-card h-100">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center p-4">
-                                <i class="fas fa-venus category-icon text-danger mb-3"></i>
-                                <h4 class="card-title">Nước hoa nữ</h4>
-                                <p class="card-text">Những mùi hương thanh lịch và quyến rũ dành cho người phụ nữ tinh
-                                    tế</p>
-                                <a href="#women-perfume" class="btn btn-danger">Khám phá</a>
+                                <i class="fas fa-spa category-icon text-success mb-3"></i>
+                                <h4 class="card-title">Tắm Trắng & Phun Trắng</h4>
+                                <p class="card-text">Công nghệ tắm trắng 5in1 giúp da trắng sáng tự nhiên an toàn hiệu
+                                    quả</p>
+                                <a href="#whitening-treatment" class="btn btn-success">Đặt lịch ngay</a>
                             </div>
                         </div>
                     </div>
@@ -226,10 +217,11 @@
                     <div class="category-card h-100">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center p-4">
-                                <i class="fas fa-venus-mars category-icon text-success mb-3"></i>
-                                <h4 class="card-title">Nước hoa unisex</h4>
-                                <p class="card-text">Những hương thơm đa năng vượt qua ranh giới truyền thống</p>
-                                <a href="#unisex-perfume" class="btn btn-success">Khám phá</a>
+                                <i class="fas fa-magic category-icon text-warning mb-3"></i>
+                                <h4 class="card-title">Phun Xăm Thẩm Mỹ</h4>
+                                <p class="card-text">Phun xăm chân mày, môi, mí mắt với công nghệ 6D tạo nên vẻ đẹp hoàn
+                                    hảo</p>
+                                <a href="#permanent-makeup" class="btn btn-warning">Đặt lịch ngay</a>
                             </div>
                         </div>
                     </div>
@@ -238,28 +230,28 @@
         </div>
     </section>
 
-    <!-- Featured Products Section -->
+    <!-- Featured Services Section -->
     <section id="featured" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Sản phẩm nổi bật</h2>
-                <p class="lead">Những hương thơm phổ biến và độc quyền nhất của chúng tôi</p>
+                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">GÓI DỊCH VỤ NỔI BẬT</h2>
+                <p class="lead">Các liệu trình làm đẹp được khách hàng tin tưởng và lựa chọn nhiều nhất</p>
             </div>
 
-            <!-- Product Filter Tabs -->
+            <!-- Service Filter Tabs -->
             <div class="text-center mb-4">
                 <ul class="nav nav-pills justify-content-center" id="productTabs">
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="pill" href="#all-products">Tất cả</a>
+                        <a class="nav-link active" data-bs-toggle="pill" href="#all-products">Tất cả dịch vụ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="pill" href="#men-products">Nam</a>
+                        <a class="nav-link" data-bs-toggle="pill" href="#men-products">Trị liệu da</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="pill" href="#women-products">Nữ</a>
+                        <a class="nav-link" data-bs-toggle="pill" href="#women-products">Thẩm mỹ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="pill" href="#unisex-products">Unisex</a>
+                        <a class="nav-link" data-bs-toggle="pill" href="#unisex-products">Phun xăm</a>
                     </li>
                 </ul>
             </div>
@@ -268,240 +260,228 @@
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="all-products">
                     <div class="row g-4">
-                        <!-- Product 1 - Men -->
+                        <!-- Service 1 - Facial Treatment -->
                         <div class="col-lg-3 col-md-6">
                             <div class="product-card" data-category="men">
                                 <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://w.ladicdn.com/s550x700/5977f59d1abc544991d43c5b/mun-y-khoa-dermaperfecta-20250307070654-fidif.png'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="text-muted mb-1">Creed</h6>
-                                        <h5 class="card-title">Aventus</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">7.900.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 2 - Women -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="women">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Tom Ford</h6>
-                                        <h5 class="card-title">Black Orchid</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">6.900.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 3 - Unisex -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="unisex">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Le Labo</h6>
-                                        <h5 class="card-title">Santal 33</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">4.890.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 4 - Women -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="women">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Maison Francis</h6>
-                                        <h5 class="card-title">Baccarat Rouge</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">8.290.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 5 - Men -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="men">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Dior</h6>
-                                        <h5 class="card-title">Sauvage</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">3.200.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 6 - Unisex -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="unisex">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Byredo</h6>
-                                        <h5 class="card-title">Gypsy Water</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">5.400.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 7 - Men -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="men">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Bleu de Chanel</h6>
-                                        <h5 class="card-title">Eau de Parfum</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">2.800.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 8 - Women -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="women">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Chanel</h6>
-                                        <h5 class="card-title">Coco Mademoiselle</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">3.500.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 9 - Unisex -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="unisex">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Diptyque</h6>
-                                        <h5 class="card-title">Philosykos</h5>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">4.200.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 10 - Women -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="women">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="text-muted mb-1">Yves Saint Laurent</h6>
-                                        <h5 class="card-title">Black Opium</h5>
+                                        <h6 class="text-muted mb-1">Trị Liệu Da</h6>
+                                        <h5 class="card-title">Trị Mụn Y Khoa DermaPerfecta</h5>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="price fw-bold text-primary">2.900.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Product 11 - Men -->
+                        <!-- Service 2 - Whitening -->
                         <div class="col-lg-3 col-md-6">
-                            <div class="product-card" data-category="men">
+                            <div class="product-card" data-category="women">
                                 <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://w.ladicdn.com/s550x700/5977f59d1abc544991d43c5b/tam-trang-phun-trang-5in1-20250307070654-tvnp9.png'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="text-muted mb-1">Giorgio Armani</h6>
-                                        <h5 class="card-title">Acqua di Gio</h5>
+                                        <h6 class="text-muted mb-1">Tắm Trắng</h6>
+                                        <h5 class="card-title">Tắm Trắng & Phun Trắng 5in1</h5>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="price fw-bold text-primary">2.400.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                            <span class="price fw-bold text-primary">3.500.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Product 12 - Unisex -->
+                        <!-- Service 3 - Permanent Makeup -->
                         <div class="col-lg-3 col-md-6">
                             <div class="product-card" data-category="unisex">
                                 <div class="card border-0 shadow-sm h-100">
-                                    <div class="product-image-placeholder bg-light d-flex align-items-center justify-content-center"
-                                        style="height: 250px;">
-                                        <i class="fas fa-spray-can fa-3x text-muted"></i>
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://w.ladicdn.com/s550x700/5977f59d1abc544991d43c5b/phun-xam-chan-may-20250307070654-n-9sh.png'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="text-muted mb-1">Hermès</h6>
-                                        <h5 class="card-title">Terre d'Hermès</h5>
+                                        <h6 class="text-muted mb-1">Phun Xăm</h6>
+                                        <h5 class="card-title">Phun Xăm Chân Mày 6D</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">4.500.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 4 - Collagen -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://w.ladicdn.com/s550x700/5977f59d1abc544991d43c5b/collagen-organic-infusion-freshtech-20250307071119-tvrkz.png'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Trẻ Hóa</h6>
+                                        <h5 class="card-title">Cấy Collagen Tươi</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">5.800.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 5 - Laser Treatment -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://dungcuykhoabinhminh.com/images/userfiles/ung-dung-cua-cong-nghe-triet-long-diode-laser.jpg'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Laser</h6>
+                                        <h5 class="card-title">Triệt Lông Laser Diode</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">3.200.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 6 - Meso Therapy -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://w.ladicdn.com/s550x700/5977f59d1abc544991d43c5b/meso-khong-kim-infusion-freshtech-20250307070654-8kp5r.png'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Mesotherapy</h6>
+                                        <h5 class="card-title">Meso Không Kim Trẻ Hóa</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">5.400.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 7 - Face Lift -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Nâng Cơ</h6>
+                                        <h5 class="card-title">Nâng Cơ Mặt Thermage FLX</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">2.800.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 8 - Lip Treatment -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://w.ladicdn.com/s550x700/5977f59d1abc544991d43c5b/phun-moi-collagen-20250307070654-ealrd.png'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Phun Xăm Môi</h6>
+                                        <h5 class="card-title">Phun Xăm Môi Collagen</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">3.500.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 9 - Body Treatment -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://images.unsplash.com/photo-1552693673-1bf958298935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Liệu Trình Body</h6>
+                                        <h5 class="card-title">Giảm Béo Không Phẫu Thuật</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">4.200.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 10 - Eyebrow Design -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="women">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyr_jalW2ASgKck0jXsxcwyL0MZbJJdG08fw&s'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Thiết Kế Chân Mày</h6>
+                                        <h5 class="card-title">Điêu Khắc Chân Mày 6D</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">2.900.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 11 - Men's Skincare -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="men">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Chăm Sóc Nam</h6>
+                                        <h5 class="card-title">Điều Trị Mụn Nam Giới</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="price fw-bold text-primary">2.400.000 ₫</span>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 12 - Anti-Aging Treatment -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="product-card" data-category="unisex">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="ladi-image-background"
+                                        style="height: 250px; background-image: url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; border-radius: 15px 15px 0 0;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="text-muted mb-1">Chống Lão Hóa</h6>
+                                        <h5 class="card-title">Căng Da Mặt Không Dao Kéo</h5>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="price fw-bold text-primary">3.800.000 ₫</span>
-                                            <button class="btn btn-outline-primary btn-sm">Thêm giỏ hàng</button>
+                                            <button class="btn btn-outline-primary btn-sm">Đặt lịch ngay</button>
                                         </div>
                                     </div>
                                 </div>
@@ -517,8 +497,9 @@
     <section id="about" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Tại sao chọn SpaStore</h2>
-                <p class="lead">Trải nghiệm nước hoa xa xỉ với dịch vụ đặc biệt</p>
+                <h2 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">CAM KẾT DỊCH VỤ TẠI IRIS
+                    BEAUTY</h2>
+                <p class="lead">Địa điểm làm đẹp uy tín, tin cậy được các sao Việt lựa chọn</p>
             </div>
 
             <div class="row g-4">
@@ -526,33 +507,33 @@
                     <div class="feature-card text-center">
                         <div
                             class="feature-icon bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center">
-                            <i class="fas fa-medal fa-2x"></i>
+                            <i class="fas fa-user-md fa-2x"></i>
                         </div>
-                        <h4>Thành viên thân thiết</h4>
-                        <p class="text-muted">Thành viên hạng vàng được giảm 5% và hạng bạc được giảm 3% trên mỗi đơn
-                            hàng. Thêm 2% giảm giá trong tháng sinh nhật.</p>
+                        <h4>Đội ngũ y bác sĩ chuyên môn</h4>
+                        <p class="text-muted">Đội ngũ y bác sĩ giàu kinh nghiệm, được đào tạo bài bản tại Hàn Quốc, cam
+                            kết mang lại hiệu quả tối ưu cho khách hàng.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="feature-card text-center">
                         <div
                             class="feature-icon bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center">
-                            <i class="fas fa-shipping-fast fa-2x"></i>
+                            <i class="fas fa-award fa-2x"></i>
                         </div>
-                        <h4>Free ship toàn quốc</h4>
-                        <p class="text-muted">SpaStore áp dụng freeship cho tất cả các khách hàng trên toàn quốc. Giao
-                            hàng nhanh chóng và an toàn đến tận nhà.</p>
+                        <h4>Công nghệ tiên tiến</h4>
+                        <p class="text-muted">Sử dụng các thiết bị, công nghệ hiện đại nhất từ Hàn Quốc và châu Âu, đảm
+                            bảo an toàn và hiệu quả cao nhất.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="feature-card text-center">
                         <div
                             class="feature-icon bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center">
-                            <i class="fas fa-certificate fa-2x"></i>
+                            <i class="fas fa-shield-alt fa-2x"></i>
                         </div>
-                        <h4>Sản phẩm chính hãng</h4>
-                        <p class="text-muted">Tất cả nước hoa được mua trực tiếp tại các store ở nước ngoài hoặc làm
-                            việc trực tiếp với các hãng. Cam kết authentic 100%.</p>
+                        <h4>Cam kết chất lượng</h4>
+                        <p class="text-muted">Hệ thống thẩm mỹ viện đạt chuẩn quốc tế, có giấy phép hoạt động hợp pháp,
+                            cam kết chất lượng dịch vụ hàng đầu.</p>
                     </div>
                 </div>
             </div>
@@ -564,13 +545,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h3 class="fw-bold mb-2">Đăng ký thành viên để nhận khuyến mãi</h3>
-                    <p class="mb-0">Theo dõi chúng tôi để nhận nhiều ưu đãi độc quyền</p>
+                    <h3 class="fw-bold mb-2">🎁 ĐĂNG KÝ NHẬN ƯU ĐÃI VIP</h3>
+                    <p class="mb-0">Nhận thông tin khuyến mãi đặc biệt và ưu đãi độc quyền từ Iris Beauty</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Nhập địa chỉ email của bạn">
-                        <button class="btn btn-light" type="button">Đăng ký</button>
+                        <input type="email" class="form-control" placeholder="Nhập số điện thoại để nhận ưu đãi">
+                        <button class="btn btn-light" type="button">📞 Đăng ký ngay</button>
                     </div>
                 </div>
             </div>
@@ -578,58 +559,60 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-dark text-white py-5">
+    <footer id="contact" class="bg-white py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
-                        <img src="assets/images/LOGO01.png" alt="SpaStore" height="32"
+                        <img src="assets/images/LOGO01.png" alt="Iris Beauty" height="32"
                             class="d-inline-block align-text-top me-2">
                     </h5>
-                    <p class="text-light">Điểm đến cao cấp của bạn cho nước hoa xa xỉ chính hãng từ khắp nơi trên thế
-                        giới.</p>
-                    <p class="text-light">
-                        <i class="fas fa-envelope me-2"></i> spa.store@gmail.com<br>
-                        <i class="fas fa-phone me-2"></i> +84 (028) 123-4567
+                    <p>Hệ thống thẩm mỹ viện Iris Beauty với nhiều chi nhánh trên toàn quốc. Chuyên cung cấp dịch vụ
+                        làm đẹp với công nghệ tiên tiến.</p>
+                    <p>
+                        <i class="fas fa-envelope me-2"></i> cskh@seoulcenter.vn<br>
+                        <i class="fas fa-phone me-2"></i> 1800.3333 - (+84) 914.269.346<br>
+                        <i class="fas fa-clock me-2"></i> Thời gian: 8:30 - 19:30 hằng ngày
                     </p>
                     <div class="social-links mt-3">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-tiktok fa-lg"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <h6 class="fw-bold mb-3">Mua sắm</h6>
+                    <h6 class="fw-bold mb-3">Dịch vụ</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Nước hoa nam</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Nước hoa nữ</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Nước hoa unisex</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Bộ quà tặng</a></li>
+                        <li><a href="#" class="text-decoration-none">Trị mụn y khoa</a></li>
+                        <li><a href="#" class="text-decoration-none">Tắm trắng 5in1</a></li>
+                        <li><a href="#" class="text-decoration-none">Cấy collagen</a></li>
+                        <li><a href="#" class="text-decoration-none">Phun xăm thẩm mỹ</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h6 class="fw-bold mb-3">Dịch vụ khách hàng</h6>
+                    <h6 class="fw-bold mb-3">Hỗ trợ khách hàng</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Vận chuyển & Đổi trả</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Hướng dẫn kích thước</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Hướng dẫn bảo quản</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Liên hệ hỗ trợ</a></li>
+                        <li><a href="#" class="text-decoration-none">Đặt lịch tư vấn</a></li>
+                        <li><a href="#" class="text-decoration-none">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="text-decoration-none">Quy trình dịch vụ</a></li>
+                        <li><a href="#" class="text-decoration-none">Liên hệ hỗ trợ</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h6 class="fw-bold mb-3">Vị trí cửa hàng</h6>
-                    <div class="text-light small">
-                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Nguyễn Huệ, Quận 1, TP.HCM<br>
-                            Mở cửa: 9h - 21h</p>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> 456 Hoàn Kiếm, Hà Nội<br>
-                            Mở cửa: 10h - 20h</p>
+                    <h6 class="fw-bold mb-3">Hệ thống cơ sở</h6>
+                    <div class="small">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 375 Nguyễn Thượng Hiền, Q.10, TP.HCM<br>
+                            Mở cửa: 8:30 - 19:30</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 38 Phố Thái Thịnh, Đống Đa, Hà Nội<br>
+                            Mở cửa: 8:30 - 19:30</p>
                     </div>
                 </div>
             </div>
             <hr class="my-4">
             <div class="text-center">
-                <p class="mb-0">&copy; 2024 SpaStore | All rights reserved</p>
+                <p class="mb-0">&copy; 2024 Iris Beauty - Hệ Thống Thẩm Mỹ Quốc Tế | All rights reserved</p>
+                <p class="small text-muted">*Mức độ hiệu quả tùy vào cơ địa của mỗi khách hàng</p>
             </div>
         </div>
     </footer>
