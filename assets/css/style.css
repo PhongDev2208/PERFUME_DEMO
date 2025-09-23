@@ -502,7 +502,12 @@ html {
 
 /* Navbar toggler for light theme */
 .navbar-light .navbar-toggler {
-  border-color: var(--text-color);
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
 .navbar-light .navbar-toggler-icon {

@@ -332,9 +332,5 @@ style.textContent = `
     .animate-in {
         animation: fadeIn 0.6s ease-out;
     }
-    
-    .navbar-toggler.active {
-        transform: rotate(90deg);
-    }
 `;
 document.head.appendChild(style);
