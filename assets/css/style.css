@@ -1,10 +1,10 @@
 /* Custom CSS for SpaStore */
 
 :root {
-  --bs-primary: #6f42c1;
-  --bs-primary-rgb: 111, 66, 193;
-  --primary-color: #6f42c1;
-  --primary-hover: #5a32a3;
+  --bs-primary: #7981ff;
+  --bs-primary-rgb: 121, 129, 255;
+  --primary-color: #7981ff;
+  --primary-hover: #5a66ff;
   --secondary-color: #e74c3c;
   --accent-color: #f39c12;
   --text-color: #333333;
@@ -526,4 +526,79 @@ html {
 
 .product-card[data-category] {
   display: block;
+}
+
+/* Floating Contact Buttons */
+.floating-contacts {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.floating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  animation: pulse 2s infinite;
+}
+
+.floating-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.phone-btn {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.phone-btn:hover {
+  background: linear-gradient(135deg, #128c7e, #25d366);
+}
+
+.facebook-btn {
+  background: linear-gradient(135deg, #1877f2, #42a5f5);
+}
+
+.facebook-btn:hover {
+  background: linear-gradient(135deg, #42a5f5, #1877f2);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(121, 129, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+      0 0 0 10px rgba(121, 129, 255, 0);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(121, 129, 255, 0);
+  }
+}
+
+/* Responsive design for floating buttons */
+@media (max-width: 768px) {
+  .floating-contacts {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
 }
