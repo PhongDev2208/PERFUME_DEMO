@@ -276,6 +276,35 @@ h6 {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+.newsletter-form .form-control,
+.newsletter-form .form-select {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.newsletter-form .form-control:focus,
+.newsletter-form .form-select:focus {
+  border: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  background: #ffffff;
+}
+
+.newsletter-form .btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Footer */
 footer {
   background-color: #ffffff !important;

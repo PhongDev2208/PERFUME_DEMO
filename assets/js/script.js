@@ -254,29 +254,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Mobile menu enhancements
-  const navbarToggler = document.querySelector(".navbar-toggler");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
-
-  if (navbarToggler) {
-    navbarToggler.addEventListener("click", function () {
-      this.classList.toggle("active");
-    });
-  }
-
-  // Close mobile menu when clicking on a link (but not dropdown toggles)
-  const mobileNavLinks = document.querySelectorAll(
-    ".navbar-nav .nav-link:not(.dropdown-toggle)"
-  );
-  mobileNavLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      if (window.innerWidth < 992) {
-        navbarCollapse.classList.remove("show");
-        navbarToggler.classList.remove("active");
-      }
-    });
-  });
-
   // Loading effect for images (if you add real images later)
   const imageContainers = document.querySelectorAll(
     ".product-image-placeholder"
@@ -334,3 +311,99 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Handle all "Đặt lịch" button clicks to scroll to newsletter section
+document.addEventListener("click", function (e) {
+  // Check if clicked element or its parent contains "Đặt lịch" text
+  const clickedElement = e.target;
+  const buttonText = clickedElement.textContent || clickedElement.innerText;
+
+  if (buttonText && buttonText.includes("Đặt lịch")) {
+    e.preventDefault(); // Prevent default action
+
+    // Find the newsletter section
+    const newsletterSection =
+      document.getElementById("newsletter") ||
+      document.querySelector(".newsletter-section");
+
+    if (newsletterSection) {
+      // Smooth scroll to newsletter section
+      newsletterSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      // Optional: Focus on first input field after scrolling
+      setTimeout(() => {
+        const firstInput =
+          newsletterSection.querySelector('input[type="text"]');
+        if (firstInput) {
+          firstInput.focus();
+        }
+      }, 1000); // Wait for scroll animation to complete
+    }
+  }
+});
+
+// Auto-close mobile navbar when clicking on navigation links
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarCollapse = document.getElementById("navbarNav");
+  const navbarToggler = document.querySelector(".navbar-toggler");
+
+  // Close navbar when clicking on regular navigation links (exclude dropdown toggles)
+  const navLinks = document.querySelectorAll(
+    ".navbar-nav .nav-link:not(.dropdown-toggle)"
+  );
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function () {
+      if (navbarCollapse.classList.contains("show")) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false,
+        });
+        bsCollapse.hide();
+      }
+    });
+  });
+
+  // Close navbar when clicking on dropdown items
+  const dropdownItems = document.querySelectorAll(".navbar-nav .dropdown-item");
+  dropdownItems.forEach(function (dropdownItem) {
+    dropdownItem.addEventListener("click", function () {
+      if (navbarCollapse.classList.contains("show")) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false,
+        });
+        bsCollapse.hide();
+      }
+    });
+  });
+
+  // Close navbar when clicking on buttons (like "Đặt lịch")
+  const navbarButtons = document.querySelectorAll(
+    ".navbar-collapse .btn, .navbar-collapse .d-flex a"
+  );
+  navbarButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (navbarCollapse.classList.contains("show")) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false,
+        });
+        bsCollapse.hide();
+      }
+    });
+  });
+
+  // Close navbar when clicking outside of it
+  document.addEventListener("click", function (event) {
+    const isClickInsideNav =
+      navbarCollapse.contains(event.target) ||
+      navbarToggler.contains(event.target);
+
+    if (!isClickInsideNav && navbarCollapse.classList.contains("show")) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false,
+      });
+      bsCollapse.hide();
+    }
+  });
+});
