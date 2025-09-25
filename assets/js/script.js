@@ -350,25 +350,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbarCollapse = document.getElementById("navbarNav");
   const navbarToggler = document.querySelector(".navbar-toggler");
 
-  // Close navbar when clicking on regular navigation links (exclude dropdown toggles)
-  const navLinks = document.querySelectorAll(
-    ".navbar-nav .nav-link:not(.dropdown-toggle)"
-  );
+  // Close navbar when clicking on navigation links
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
   navLinks.forEach(function (navLink) {
     navLink.addEventListener("click", function () {
-      if (navbarCollapse.classList.contains("show")) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-          toggle: false,
-        });
-        bsCollapse.hide();
-      }
-    });
-  });
-
-  // Close navbar when clicking on dropdown items
-  const dropdownItems = document.querySelectorAll(".navbar-nav .dropdown-item");
-  dropdownItems.forEach(function (dropdownItem) {
-    dropdownItem.addEventListener("click", function () {
       if (navbarCollapse.classList.contains("show")) {
         const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
           toggle: false,
