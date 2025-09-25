@@ -751,13 +751,20 @@ function createProductCard(product) {
   col.innerHTML = `
         <div class="product-card fade-in">
             <div class="card">
-                <div class="product-image">
-                    ${badges.join("")}
-                    <i class="fas fa-spray-can"></i>
-                </div>
+                <a href="product-detail.html" class="product-link">
+                    <div class="product-image">
+                        ${badges.join("")}
+                        <img src="https://product.hstatic.net/1000340570/product/versace-eros-for-men_e21f596ba1f6467eb39ace8813943882_grande.jpg" 
+                             alt="${product.name}" 
+                             class="img-fluid w-100" 
+                             style="height: 250px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                </a>
                 <div class="product-info">
                     <div class="product-brand">${product.brandDisplay}</div>
-                    <h5 class="product-name">${product.name}</h5>
+                    <a href="product-detail.html" class="product-link text-decoration-none">
+                        <h5 class="product-name">${product.name}</h5>
+                    </a>
                     <p class="text-muted small mb-2">${product.description}</p>
                     <div class="product-features mb-3">
                         ${features}

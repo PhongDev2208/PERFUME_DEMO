@@ -229,6 +229,17 @@
   overflow: hidden;
 }
 
+.product-image img {
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
 .product-image .fa-spray-can {
   font-size: 4rem;
   color: #dee2e6;
@@ -238,6 +249,24 @@
 .product-card:hover .product-image .fa-spray-can {
   transform: scale(1.1);
   color: #ced4da;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-name {
+  transition: color 0.2s ease;
+}
+
+.product-link:hover .product-name {
+  color: var(--primary-color);
 }
 
 .product-badge {

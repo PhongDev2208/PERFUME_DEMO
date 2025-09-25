@@ -1,0 +1,108 @@
+/* Page Template Custom Styles */
+
+/* Sidebar Styling */
+.page-template-sidebar {
+  border-radius: 8px;
+}
+
+.page-template-sidebar .card {
+  transition: all 0.3s ease;
+}
+
+.page-template-sidebar .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(111, 66, 193, 0.15) !important;
+}
+
+/* Collapsible Sections */
+.collapse-header {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.collapse-header:hover {
+  background-color: #f8f9fa;
+}
+
+.collapse-header .fas {
+  transition: transform 0.3s ease;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  transition: all 0.2s ease;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: block;
+}
+
+.sidebar-link:hover {
+  background-color: #f8f9fa;
+  color: #6f42c1 !important;
+  transform: translateX(5px);
+}
+
+/* Active Menu Item */
+.sidebar-menu .text-primary {
+  background-color: rgba(111, 66, 193, 0.1);
+  padding: 5px 10px;
+  border-radius: 4px;
+  border-left: 3px solid #6f42c1;
+}
+
+/* Sticky Sidebar */
+@media (min-width: 992px) {
+  .sticky-sidebar {
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
+}
+
+/* Social Media Links */
+.social-links a {
+  transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .page-template-sidebar {
+    margin-bottom: 2rem;
+  }
+
+  .sticky-sidebar {
+    position: relative !important;
+    top: auto !important;
+    max-height: none !important;
+  }
+}
+
+/* Content Area */
+.main-content-area {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Custom Scrollbar for Sidebar */
+.sticky-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sticky-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.sticky-sidebar::-webkit-scrollbar-thumb {
+  background: #6f42c1;
+  border-radius: 2px;
+}
+
+.sticky-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #5a369c;
+}
