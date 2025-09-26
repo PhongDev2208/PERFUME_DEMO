@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags for Iris Beauty Spa & Beauty -->
+    <title>Iris Beauty - Cửa Hàng Mỹ Phẩm Chuyên Nghiệp | Chăm Sóc Sắc Đẹp Toàn Diện</title>
+    <meta name="description"
+        content="Iris Beauty - Cửa hàng mỹ phẩm chuyên nghiệp, cung cấp các sản phẩm chăm sóc da, làm đẹp cao cấp từ các thương hiệu uy tín hàng đầu thế giới.">
+    <meta name="keywords"
+        content="Iris Beauty, mỹ phẩm, chăm sóc da, làm đẹp, skincare, serum, kem dưỡng, trang điểm, mỹ phẩm cao cấp, mỹ phẩm chính hãng">
+    <meta name="author" content="Iris Beauty Spa & Beauty">
+    <meta property="og:title" content="Iris Beauty - Cửa Hàng Mỹ Phẩm Chuyên Nghiệp">
+    <meta property="og:description"
+        content="Khám phá bộ sưu tập mỹ phẩm cao cấp từ các thương hiệu hàng đầu thế giới tại Iris Beauty.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://irisbeauty.vn/">
+    <meta property="og:image" content="https://irisbeauty.vn/assets/images/LOGO01.png">
+    <meta property="og:site_name" content="Iris Beauty Spa & Beauty">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iris Beauty - Cửa Hàng Mỹ Phẩm Chuyên Nghiệp">
+    <meta name="twitter:description"
+        content="Iris Beauty - Cửa hàng mỹ phẩm cao cấp, chăm sóc sắc đẹp toàn diện với các sản phẩm chính hãng từ các thương hiệu uy tín.">
+    <meta name="twitter:image" content="https://irisbeauty.vn/assets/images/LOGO01.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Shop-specific CSS -->
+    <link rel="stylesheet" href="assets/css/shop.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Playfair Display', serif;">
+                <img src="assets/images/LOGO01.png" alt="SpaStore" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">SPA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shopmypham.html" target="_blank">MỸ PHẨM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopnuochoa.html" target="_blank">NƯỚC HOA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">
+                        <i class="fas fa-user"></i> Tài khoản
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                        Cửa Hàng Mỹ Phẩm
+                    </h1>
+                    <p class="lead mb-4">
+                        Khám phá bộ sưu tập mỹ phẩm cao cấp với hàng trăm sản phẩm chăm sóc da từ những thương hiệu hàng
+                        đầu thế giới
+                    </p>
+                    <div class="d-flex align-items-center text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-box-open me-1"></i>
+                            <span id="total-products">18</span> sản phẩm
+                        </span>
+                        <span>
+                            <i class="fas fa-shield-alt me-1"></i>
+                            100% chính hãng
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <div class="position-relative">
+                            <input type="text" class="form-control form-control-lg" id="product-search"
+                                placeholder="Tìm kiếm mỹ phẩm, thương hiệu..." style="padding-right: 50px;">
+                            <button
+                                class="btn position-absolute end-0 top-0 h-100 px-3 border-0 bg-transparent text-muted">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="search-suggestions mt-2" id="search-suggestions" style="display: none;">
+                            <!-- Search suggestions will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters and Products Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3">
+                    <div class="filters-sidebar">
+                        <div class="filter-section mb-4">
+                            <h5 class="filter-title fw-bold mb-3">
+                                <i class="fas fa-filter me-2"></i>Bộ lọc
+                            </h5>
+
+                            <!-- Clear Filters Button -->
+                            <button class="btn btn-outline-secondary btn-sm mb-3 w-100" id="clear-filters">
+                                <i class="fas fa-times me-2"></i>Xóa tất cả bộ lọc
+                            </button>
+
+                            <!-- Category Filter -->
+                            <div class="filter-group mb-4">
+                                <h6 class="filter-subtitle fw-semibold mb-3">
+                                    <i class="fas fa-tags me-2 text-primary"></i>Danh mục
+                                </h6>
+                                <div class="filter-options">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="skincare"
+                                            id="filter-skincare">
+                                        <label class="form-check-label" for="filter-skincare">
+                                            <i class="fas fa-spa me-1 text-success"></i>
+                                            Chăm sóc da <span class="text-muted">(12)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="serum" id="filter-serum">
+                                        <label class="form-check-label" for="filter-serum">
+                                            <i class="fas fa-tint me-1 text-info"></i>
+                                            Serum <span class="text-muted">(6)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cream" id="filter-cream">
+                                        <label class="form-check-label" for="filter-cream">
+                                            <i class="fas fa-circle me-1 text-warning"></i>
+                                            Kem dưỡng <span class="text-muted">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="set" id="filter-set">
+                                        <label class="form-check-label" for="filter-set">
+                                            <i class="fas fa-gift me-1 text-danger"></i>
+                                            Bộ sản phẩm <span class="text-muted">(4)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Brand Filter -->
+                            <div class="filter-group mb-4">
+                                <h6 class="filter-subtitle fw-semibold mb-3">
+                                    <i class="fas fa-award me-2 text-warning"></i>Thương hiệu
+                                </h6>
+                                <div class="filter-options">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="yehwadam"
+                                            id="filter-yehwadam">
+                                        <label class="form-check-label" for="filter-yehwadam">
+                                            Yehwadam <span class="text-muted">(6)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="the-face-shop"
+                                            id="filter-the-face-shop">
+                                        <label class="form-check-label" for="filter-the-face-shop">
+                                            The Face Shop <span class="text-muted">(4)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="etude-house"
+                                            id="filter-etude-house">
+                                        <label class="form-check-label" for="filter-etude-house">
+                                            Etude House <span class="text-muted">(3)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="innisfree"
+                                            id="filter-innisfree">
+                                        <label class="form-check-label" for="filter-innisfree">
+                                            Innisfree <span class="text-muted">(3)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="laneige"
+                                            id="filter-laneige">
+                                        <label class="form-check-label" for="filter-laneige">
+                                            Laneige <span class="text-muted">(2)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skin Type Filter -->
+                            <div class="filter-group mb-4">
+                                <h6 class="filter-subtitle fw-semibold mb-3">
+                                    <i class="fas fa-user-circle me-2 text-info"></i>Loại da
+                                </h6>
+                                <div class="filter-options">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="all-skin"
+                                            id="filter-all-skin">
+                                        <label class="form-check-label" for="filter-all-skin">
+                                            <i class="fas fa-check-circle me-1 text-success"></i>
+                                            Mọi loại da <span class="text-muted">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="dry-skin"
+                                            id="filter-dry-skin">
+                                        <label class="form-check-label" for="filter-dry-skin">
+                                            <i class="fas fa-snowflake me-1 text-primary"></i>
+                                            Da khô <span class="text-muted">(4)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="oily-skin"
+                                            id="filter-oily-skin">
+                                        <label class="form-check-label" for="filter-oily-skin">
+                                            <i class="fas fa-tint me-1 text-warning"></i>
+                                            Da dầu <span class="text-muted">(3)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="sensitive-skin"
+                                            id="filter-sensitive-skin">
+                                        <label class="form-check-label" for="filter-sensitive-skin">
+                                            <i class="fas fa-heart me-1 text-danger"></i>
+                                            Da nhạy cảm <span class="text-muted">(3)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Active Filters -->
+                            <div class="active-filters" id="active-filters" style="display: none;">
+                                <h6 class="filter-subtitle fw-semibold mb-3">Bộ lọc đã chọn:</h6>
+                                <div class="d-flex flex-wrap gap-2" id="active-filter-tags">
+                                    <!-- Active filter tags will be added here dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <!-- Sort and View Options -->
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                        <div class="results-info">
+                            <span class="text-muted">Hiển thị <span id="showing-results">1-18</span> của <span
+                                    id="total-results">18</span> sản phẩm</span>
+                        </div>
+                        <div class="view-options d-flex align-items-center gap-3">
+                            <span class="text-muted small">Sắp xếp:</span>
+                            <select class="form-select form-select-sm" id="sort-products" style="width: auto;">
+                                <option value="default">Mặc định</option>
+                                <option value="name-asc">Tên A-Z</option>
+                                <option value="name-desc">Tên Z-A</option>
+                                <option value="brand-asc">Thương hiệu A-Z</option>
+                                <option value="popularity">Phổ biến nhất</option>
+                                <option value="newest">Mới nhất</option>
+                            </select>
+                            <div class="view-toggle ms-3">
+                                <button class="btn btn-sm btn-outline-secondary active" id="grid-view"
+                                    title="Xem dạng lưới">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary" id="list-view"
+                                    title="Xem dạng danh sách">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Container - Static HTML Cards -->
+                    <div class="products-container" id="products-container">
+                        <div class="row g-4" id="products-grid">
+                            <!-- Static Product Cards -->
+
+                            <!-- Product 1 - Bộ Dưỡng Trắng Sang Da -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge">Hot</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/11/bo-duong-trang-sang-da-yehwadam-jeju-magnolia-pure-brightening-serum-special-gift-set-4sp-tfs-2-247x296.png"
+                                                    alt="Bộ Dưỡng Trắng Sang Da" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Yehwadam</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Bộ Dưỡng Trắng Sang Da Jeju Magnolia</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Bộ serum dưỡng trắng từ hoa mộc lan Jeju
+                                            </p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">Bộ 4 sản phẩm</span>
+                                                <span class="product-feature">Trắng da</span>
+                                                <span class="product-feature">Chính hãng</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">1.250.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(1)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(1)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(1)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 2 - Bộ Dưỡng Trẻ Hóa Da -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge new">Mới</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/09/bo-duong-tre-hoa-da-yehwadam-hwansaenggo-ultimate-rejuvenating-skincare-kit-4sp-247x296.jpg"
+                                                    alt="Bộ Dưỡng Trẻ Hóa Da" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Yehwadam</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Bộ Dưỡng Trẻ Hóa Da Hwansaenggo</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Bộ chăm sóc da chống lão hóa cao cấp</p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">Bộ 4 sản phẩm</span>
+                                                <span class="product-feature">Chống lão hóa</span>
+                                                <span class="product-feature">Premium</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">1.890.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(2)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(2)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(2)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 - Bộ Dưỡng Trắng Trẻ Hóa Da -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge">Hot</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/06/bo-duong-trang-tre-hoa-da-yehwadam-hwansaenggo-rejuvenating-radiance-special-set-6sp-247x296.jpg"
+                                                    alt="Bộ Dưỡng Trắng Trẻ Hóa Da" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Yehwadam</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Bộ Dưỡng Trắng Trẻ Hóa Da Rejuvenating</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Bộ chăm sóc da toàn diện trắng mịn trẻ hóa
+                                            </p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">Bộ 6 sản phẩm</span>
+                                                <span class="product-feature">Trắng + Trẻ hóa</span>
+                                                <span class="product-feature">Luxury</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">2.450.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(3)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(3)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(3)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4 - Serum Vitamin C -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge">Bestseller</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/11/bo-duong-trang-sang-da-yehwadam-jeju-magnolia-pure-brightening-serum-special-gift-set-4sp-tfs-2-247x296.png"
+                                                    alt="Serum Vitamin C" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">The Face Shop</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Serum Vitamin C Brightening</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Serum làm sáng da với Vitamin C tự nhiên
+                                            </p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">30ml</span>
+                                                <span class="product-feature">Vitamin C</span>
+                                                <span class="product-feature">Làm sáng da</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">450.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(4)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(4)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(4)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 5 - Kem Dưỡng Ẩm -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge">Hot</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/09/bo-duong-tre-hoa-da-yehwadam-hwansaenggo-ultimate-rejuvenating-skincare-kit-4sp-247x296.jpg"
+                                                    alt="Kem Dưỡng Ẩm" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Laneige</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Kem Dưỡng Ẩm Water Bank</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Kem dưỡng ẩm chuyên sâu cho da khô</p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">50ml</span>
+                                                <span class="product-feature">Dưỡng ẩm</span>
+                                                <span class="product-feature">Da khô</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">680.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(5)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(5)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(5)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 6 - Serum Retinol -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge new">Mới</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/06/bo-duong-trang-tre-hoa-da-yehwadam-hwansaenggo-rejuvenating-radiance-special-set-6sp-247x296.jpg"
+                                                    alt="Serum Retinol" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Etude House</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Serum Retinol Anti-Aging</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Serum chống lão hóa với công nghệ Retinol
+                                            </p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">30ml</span>
+                                                <span class="product-feature">Retinol</span>
+                                                <span class="product-feature">Chống lão hóa</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">520.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(6)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(6)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(6)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 7 - Toner Cấp Ẩm -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge">Hot</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/11/bo-duong-trang-sang-da-yehwadam-jeju-magnolia-pure-brightening-serum-special-gift-set-4sp-tfs-2-247x296.png"
+                                                    alt="Toner Cấp Ẩm" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Innisfree</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Toner Cấp Ẩm Green Tea</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Toner cân bằng độ ẩm từ trà xanh Jeju</p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">200ml</span>
+                                                <span class="product-feature">Trá xanh</span>
+                                                <span class="product-feature">Cấp ẩm</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">320.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(7)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(7)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(7)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 8 - Sữa Rửa Mặt -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge">Bestseller</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/09/bo-duong-tre-hoa-da-yehwadam-hwansaenggo-ultimate-rejuvenating-skincare-kit-4sp-247x296.jpg"
+                                                    alt="Sữa Rửa Mặt" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">The Face Shop</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Sữa Rửa Mặt Rice Water Bright</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Sữa rửa mặt làm sáng da từ nước gạo</p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">150ml</span>
+                                                <span class="product-feature">Nước gạo</span>
+                                                <span class="product-feature">Làm sạch</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">180.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(8)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(8)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(8)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 9 - Mặt Nạ Dưỡng Ẩm -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-card fade-in">
+                                    <div class="card">
+                                        <a href="product-detail-my-pham.html" class="product-link">
+                                            <div class="product-image">
+                                                <span class="product-badge new">Mới</span>
+                                                <img src="https://myphamthefaceshop.com/wp-content/uploads/2021/06/bo-duong-trang-tre-hoa-da-yehwadam-hwansaenggo-rejuvenating-radiance-special-set-6sp-247x296.jpg"
+                                                    alt="Mặt Nạ Dưỡng Ẩm" class="img-fluid w-100"
+                                                    style="height: 250px; object-fit: cover; border-radius: 8px;">
+                                            </div>
+                                        </a>
+                                        <div class="product-info">
+                                            <div class="product-brand">Etude House</div>
+                                            <a href="product-detail-my-pham.html" class="product-link text-decoration-none">
+                                                <h5 class="product-name">Mặt Nạ Dưỡng Ẩm 0.2 Therapy</h5>
+                                            </a>
+                                            <p class="text-muted small mb-2">Mặt nạ giấy cấp ẩm chuyên sâu</p>
+                                            <div class="product-features mb-3">
+                                                <span class="product-feature">Hộp 10 miếng</span>
+                                                <span class="product-feature">Cấp ẩm</span>
+                                                <span class="product-feature">Mặt nạ giấy</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <span class="product-price">240.000 ₫</span>
+                                            </div>
+                                            <div class="product-actions">
+                                                <button class="btn btn-add-cart" onclick="addToCart(9)">
+                                                    <i class="fas fa-shopping-cart me-2"></i>Thêm giỏ hàng
+                                                </button>
+                                                <button class="btn btn-quickview" onclick="quickView(9)"
+                                                    title="Xem nhanh">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-favorite" onclick="toggleFavorite(9)"
+                                                    title="Yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h3 class="fw-bold mb-3">🎁 ĐĂNG KÝ NHẬN ƯU ĐÃI VIP</h3>
+                    <p class="mb-4">Nhận thông tin khuyến mãi đặc biệt và ưu đãi độc quyền từ Iris Beauty. Đặt lịch tư
+                        vấn miễn phí ngay hôm nay!</p>
+                </div>
+                <div class="col-lg-7">
+                    <form class="newsletter-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Tên của bạn" required>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select" required>
+                                    <option value="">Chọn dịch vụ quan tâm</option>
+                                    <option value="tri-mun">Trị mụn y khoa</option>
+                                    <option value="tam-trang">Tắm trắng 5in1</option>
+                                    <option value="cay-collagen">Cấy collagen</option>
+                                    <option value="phun-xam">Phun xăm thẩm mỹ</option>
+                                    <option value="nang-co">Nâng cơ mặt</option>
+                                    <option value="triet-long">Triệt lông laser</option>
+                                    <option value="khac">Dịch vụ khác</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select" required>
+                                    <option value="">Thời gian phù hợp</option>
+                                    <option value="sang">Buổi sáng (8:30-12:00)</option>
+                                    <option value="chieu">Buổi chiều (13:00-17:00)</option>
+                                    <option value="toi">Buổi tối (17:30-19:30)</option>
+                                    <option value="cuoi-tuan">Cuối tuần</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="SĐT liên hệ" required>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-light btn-lg w-100">
+                                    <i class="fas fa-calendar-check me-2"></i>📞 Đăng ký tư vấn miễn phí
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                        <img src="assets/images/LOGO01.png" alt="SpaStore" height="32"
+                            class="d-inline-block align-text-top me-2">
+                    </h5>
+                    <p>Điểm đến cao cấp của bạn cho mỹ phẩm chăm sóc da chính hãng từ các thương hiệu hàng đầu thế giới.
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope me-2"></i> spa.store@gmail.com<br>
+                        <i class="fas fa-phone me-2"></i> +84 (028) 123-4567
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Mua sắm</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="shopmypham.html?filter=skincare" class="text-decoration-none" target="_blank">Chăm
+                                sóc da</a></li>
+                        <li><a href="shopmypham.html?filter=serum" class="text-decoration-none"
+                                target="_blank">Serum</a></li>
+                        <li><a href="shopmypham.html?filter=cream" class="text-decoration-none" target="_blank">Kem
+                                dưỡng</a></li>
+                        <li><a href="shopmypham.html" class="text-decoration-none" target="_blank">Tất cả sản phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Dịch vụ khách hàng</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Hướng dẫn sử dụng</a></li>
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Hướng dẫn bảo quản</a></li>
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Vị trí cửa hàng</h6>
+                    <div class="small">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Nguyễn Huệ, Quận 1, TP.HCM<br>
+                            Mở cửa: 9h - 21h</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 456 Hoàn Kiếm, Hà Nội<br>
+                            Mở cửa: 10h - 20h</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 SpaStore | All rights reserved | <a href="index.html" class="">Trang chủ</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contacts">
+        <!-- Phone Button -->
+        <a href="tel:18003333" class="floating-btn phone-btn" title="Gọi ngay: 1800.3333">
+            <i class="fas fa-phone"></i>
+        </a>
+        <!-- Facebook Button -->
+        <a href="https://facebook.com/irisbeauty" target="_blank" class="floating-btn facebook-btn"
+            title="Chat Facebook">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Shop JavaScript -->
+    <script src="assets/js/shop.js"></script>
+</body>
+
+</html>
