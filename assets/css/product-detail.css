@@ -192,3 +192,139 @@
 .rating-breakdown .progress-bar {
   border-radius: 4px;
 }
+
+/* Mobile Responsiveness Fixes */
+@media (max-width: 767.98px) {
+  /* Fix sticky gallery on mobile */
+  .product-gallery {
+    position: static;
+    top: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Fix quantity selector and add to cart button spacing */
+  .row.align-items-center.mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .row.align-items-center.mb-4 .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  .btn-add-cart {
+    margin-bottom: 0.75rem !important;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Fix tab content and pane spacing */
+  .tab-content {
+    padding: 20px 15px;
+    margin-bottom: 2rem;
+  }
+
+  .tab-pane {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Fix "Xem thêm đánh giá" button spacing */
+  .reviews-list {
+    margin-bottom: 2rem;
+  }
+
+  .reviews-list + .text-center {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Fix tab pane titles spacing */
+  .tab-pane h4 {
+    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  /* Fix sections spacing within tab panes */
+  .tab-pane .row {
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-pane table {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Fix related products spacing */
+  .related-product {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Price section mobile adjustments */
+  .price-section {
+    padding: 15px;
+    margin: 15px 0 20px 0;
+  }
+
+  .current-price {
+    font-size: 1.5rem;
+  }
+
+  .original-price {
+    font-size: 1rem;
+  }
+
+  /* Product features mobile adjustments */
+  .product-features {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* Tab pills mobile responsiveness */
+  .nav-pills {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-pills .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-pills .nav-link {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  /* Extra spacing for better mobile experience */
+  section.py-5.bg-light {
+    padding-bottom: 3rem !important;
+  }
+
+  /* Ensure no content sticks together */
+  .container > .row {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 991.98px) {
+  .product-gallery {
+    position: static;
+    top: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-content {
+    padding: 25px 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-pane {
+    padding-bottom: 1rem;
+  }
+}
