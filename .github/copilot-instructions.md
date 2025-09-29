@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a Vietnamese spa and beauty care website inspired by https://dnb.seoulcenter.com.vn/. The project focuses on creating a modern, responsive web experience for Vietnamese customers seeking beauty and spa services with elegant UI/UX design, featuring purple and white color schemes with proper Vietnamese typography support.
+This is a Vietnamese spa and beauty care website inspired by IRIS BEAUTY. The project focuses on creating a modern, responsive web experience for Vietnamese customers seeking beauty and spa services with elegant UI/UX design, featuring purple and white color schemes with proper Vietnamese typography support.
 
 ## Architecture & Structure
 
