@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Thanh Toán - Iris Beauty | Hoàn Tất Đơn Hàng</title>
+    <meta name="description"
+        content="Hoàn tất đơn hàng tại Iris Beauty với quy trình thanh toán nhanh chóng và bảo mật. Mỹ phẩm và nước hoa cao cấp.">
+    <meta name="keywords" content="thanh toán, checkout, đặt hàng, nước hoa, mỹ phẩm, Iris Beauty">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Playfair Display', serif;">
+                <img src="assets/images/LOGO01.png" alt="Iris Beauty" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">SPA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopmypham.html" target="_blank">MỸ PHẨM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopnuochoa.html" target="_blank">NƯỚC HOA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">
+                        <i class="fas fa-user"></i> Tài khoản
+                    </a>
+                    <a href="cart.html" class="btn btn-outline-primary">
+                        <i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="badge bg-primary ms-1">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="py-3 bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html" class="text-decoration-none">Giỏ hàng</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Checkout Header -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                    <i class="fas fa-credit-card me-3 text-primary"></i>Thanh Toán
+                </h1>
+                <p class="lead text-muted">Hoàn tất thông tin để hoàn thành đơn hàng của bạn</p>
+            </div>
+
+            <div class="row">
+                <!-- Checkout Form -->
+                <div class="col-lg-8">
+                    <form>
+                        <!-- Shipping Information -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0"><i class="fas fa-shipping-fast me-2"></i>Thông tin giao hàng</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">Họ *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Tên *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Số điện thoại *</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Địa chỉ *</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Số nhà, tên đường"
+                                        required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="city" class="form-label">Tỉnh/Thành phố *</label>
+                                        <select class="form-select" id="city" required>
+                                            <option value="">Chọn tỉnh/thành phố</option>
+                                            <option value="hcm">TP. Hồ Chí Minh</option>
+                                            <option value="hanoi">Hà Nội</option>
+                                            <option value="danang">Đà Nẵng</option>
+                                            <option value="haiphong">Hải Phòng</option>
+                                            <option value="cantho">Cần Thơ</option>
+                                            <option value="other">Khác</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="district" class="form-label">Quận/Huyện *</label>
+                                        <select class="form-select" id="district" required>
+                                            <option value="">Chọn quận/huyện</option>
+                                            <option value="q1">Quận 1</option>
+                                            <option value="q2">Quận 2</option>
+                                            <option value="q3">Quận 3</option>
+                                            <option value="q10">Quận 10</option>
+                                            <option value="other">Khác</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="ward" class="form-label">Phường/Xã *</label>
+                                        <select class="form-select" id="ward" required>
+                                            <option value="">Chọn phường/xã</option>
+                                            <option value="p1">Phường 1</option>
+                                            <option value="p2">Phường 2</option>
+                                            <option value="p3">Phường 3</option>
+                                            <option value="other">Khác</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="notes" class="form-label">Ghi chú đơn hàng</label>
+                                    <textarea class="form-control" id="notes" rows="3"
+                                        placeholder="Ghi chú đặc biệt về đơn hàng của bạn"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0"><i class="fas fa-credit-card me-2"></i>Phương thức thanh toán</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="cod"
+                                                value="cod" checked>
+                                            <label class="form-check-label" for="cod">
+                                                <i class="fas fa-money-bill-wave me-2 text-success"></i>
+                                                <strong>Thanh toán khi nhận hàng (COD)</strong>
+                                                <small class="d-block text-muted">Thanh toán bằng tiền mặt khi nhận
+                                                    hàng</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="banking" value="banking">
+                                            <label class="form-check-label" for="banking">
+                                                <i class="fas fa-university me-2 text-primary"></i>
+                                                <strong>Chuyển khoản ngân hàng</strong>
+                                                <small class="d-block text-muted">Chuyển khoản qua ngân hàng</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="momo"
+                                                value="momo">
+                                            <label class="form-check-label" for="momo">
+                                                <i class="fas fa-mobile-alt me-2 text-danger"></i>
+                                                <strong>MoMo</strong>
+                                                <small class="d-block text-muted">Thanh toán qua ví điện tử MoMo</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod"
+                                                id="zalopay" value="zalopay">
+                                            <label class="form-check-label" for="zalopay">
+                                                <i class="fas fa-wallet me-2 text-info"></i>
+                                                <strong>ZaloPay</strong>
+                                                <small class="d-block text-muted">Thanh toán qua ví điện tử
+                                                    ZaloPay</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Banking Details (Hidden by default) -->
+                                <div id="bankingDetails" class="mt-4" style="display: none;">
+                                    <div class="alert alert-info">
+                                        <h6><i class="fas fa-info-circle me-2"></i>Thông tin chuyển khoản:</h6>
+                                        <p class="mb-2"><strong>Ngân hàng:</strong> Vietcombank</p>
+                                        <p class="mb-2"><strong>Số tài khoản:</strong> 0123456789</p>
+                                        <p class="mb-2"><strong>Chủ tài khoản:</strong> CÔNG TY IRIS BEAUTY</p>
+                                        <p class="mb-0"><strong>Nội dung:</strong> Thanh toán đơn hàng [Mã đơn hàng]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        Tôi đã đọc và đồng ý với
+                                        <a href="chinh-sach-bao-mat.html" class="text-decoration-none"
+                                            target="_blank">chính sách bảo mật</a>
+                                        và
+                                        <a href="cach-thuc-mua-hang.html" class="text-decoration-none"
+                                            target="_blank">điều khoản sử dụng</a>
+                                        của Iris Beauty
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm sticky-top" style="top: 100px;">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0"><i class="fas fa-receipt me-2"></i>Đơn hàng của bạn</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Order Items -->
+                            <div class="order-item d-flex align-items-center mb-3 pb-3 border-bottom">
+                                <img src="https://product.hstatic.net/1000340570/product/20aa076c38b64cb98058220ad323da9d_59b07a0f6fe14772a0b619df09de7f2b_medium.jpg"
+                                    alt="Dior Sauvage EDT" class="rounded me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Dior Sauvage EDT</h6>
+                                    <small class="text-muted">Số lượng: 1</small>
+                                </div>
+                                <span class="fw-bold">3.200.000 ₫</span>
+                            </div>
+
+                            <div class="order-item d-flex align-items-center mb-3 pb-3 border-bottom">
+                                <img src="https://product.hstatic.net/1000340570/product/marc-jacobs-daisy-100ml_88cde060f0584a308b61804a5b0e8b09_medium.jpg"
+                                    alt="Marc Jacobs Daisy" class="rounded me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Marc Jacobs Daisy EDT</h6>
+                                    <small class="text-muted">Số lượng: 1</small>
+                                </div>
+                                <span class="fw-bold">2.800.000 ₫</span>
+                            </div>
+
+                            <div class="order-item d-flex align-items-center mb-3 pb-3 border-bottom">
+                                <img src="https://product.hstatic.net/1000340570/product/armaf_club_de_nuit_intense_man_edt_5cb41333bc394b6fb283b09366602190_medium.jpg"
+                                    alt="Armaf Club De Nuit Intense" class="rounded me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Armaf Club De Nuit Intense Man</h6>
+                                    <small class="text-muted">Số lượng: 1</small>
+                                </div>
+                                <span class="fw-bold">1.650.000 ₫</span>
+                            </div>
+
+                            <!-- Order Totals -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Tạm tính:</span>
+                                <span class="fw-bold">7.650.000 ₫</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Phí vận chuyển:</span>
+                                <span class="text-success fw-bold">Miễn phí</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Thuế VAT (10%):</span>
+                                <span class="fw-bold">765.000 ₫</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-4">
+                                <span class="h5 fw-bold">Tổng cộng:</span>
+                                <span class="h5 fw-bold text-primary">8.415.000 ₫</span>
+                            </div>
+
+                            <!-- Place Order Button -->
+                            <button type="submit" class="btn btn-success btn-lg w-100 mb-3">
+                                <i class="fas fa-check me-2"></i>Đặt hàng
+                            </button>
+
+                            <!-- Back to Cart -->
+                            <a href="cart.html" class="btn btn-outline-secondary w-100">
+                                <i class="fas fa-arrow-left me-2"></i>Quay lại giỏ hàng
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Security Badge -->
+                    <div class="card shadow-sm mt-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                            <h6 class="fw-bold">Thanh toán an toàn</h6>
+                            <p class="small text-muted mb-0">
+                                Thông tin của bạn được bảo vệ bằng mã hóa SSL 256-bit
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                        <img src="assets/images/LOGO01.png" alt="Iris Beauty" height="32"
+                            class="d-inline-block align-text-top me-2">
+                    </h5>
+                    <p>Hệ thống thẩm mỹ viện Iris Beauty với nhiều chi nhánh trên toàn quốc. Chuyên cung cấp dịch vụ
+                        làm đẹp với công nghệ tiên tiến.</p>
+                    <p>
+                        <i class="fas fa-envelope me-2"></i> cskh@seoulcenter.vn<br>
+                        <i class="fas fa-phone me-2"></i> 1800.3333 - (+84) 914.269.346<br>
+                        <i class="fas fa-clock me-2"></i> Thời gian: 8:30 - 19:30 hằng ngày
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-tiktok fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Dịch vụ</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Trị mụn y khoa</a></li>
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Tắm trắng 5in1</a></li>
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Cấy collagen</a></li>
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Phun xăm thẩm mỹ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Hỗ trợ khách hàng</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#newsletter" class="text-decoration-none">Đặt lịch tư vấn</a></li>
+                        <li><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Cách thức mua hàng</a></li>
+                        <li><a href="phuong-thuc-thanh-toan.html" class="text-decoration-none">Phương thức thanh
+                                toán</a></li>
+                        <li><a href="chinh-sach-bao-mat.html" class="text-decoration-none">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Hệ thống cơ sở</h6>
+                    <div class="small">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 375 Nguyễn Thượng Hiền, Q.10, TP.HCM<br>
+                            Mở cửa: 8:30 - 19:30</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 38 Phố Thái Thịnh, Đống Đa, Hà Nội<br>
+                            Mở cửa: 8:30 - 19:30</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Iris Beauty - Hệ Thống Thẩm Mỹ Quốc Tế | All rights reserved</p>
+                <p class="small text-muted">*Mức độ hiệu quả tùy vào cơ địa của mỗi khách hàng</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contacts">
+        <!-- Phone Button -->
+        <a href="tel:18003333" class="floating-btn phone-btn" title="Gọi ngay: 1800.3333">
+            <i class="fas fa-phone"></i>
+        </a>
+        <!-- Facebook Button -->
+        <a href="https://facebook.com/irisbeauty" target="_blank" class="floating-btn facebook-btn"
+            title="Chat Facebook">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple JavaScript for Payment Method Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const paymentMethods = document.querySelectorAll('input[name="paymentMethod"]');
+            const bankingDetails = document.getElementById('bankingDetails');
+
+            paymentMethods.forEach(method => {
+                method.addEventListener('change', function () {
+                    if (this.value === 'banking') {
+                        bankingDetails.style.display = 'block';
+                    } else {
+                        bankingDetails.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Checkout Styling -->
+    <style>
+        .form-check-label {
+            cursor: pointer;
+        }
+
+        .order-item img {
+            border: 1px solid #dee2e6;
+        }
+
+        .card-header {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 991px) {
+            .sticky-top {
+                position: static !important;
+            }
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+        }
+    </style>
+</body>
+
+</html>
