@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags for Product Detail -->
+    <title>Bộ Dưỡng Trắng Trẻ Hóa Da Yehwadam - Mỹ Phẩm Cao Cấp | Iris Beauty</title>
+    <meta name="description"
+        content="Bộ Dưỡng Trắng Trẻ Hóa Da Yehwadam Hwansaenggo - Mỹ phẩm cao cấp với công thức từ thảo dược tự nhiên. Mua mỹ phẩm chính hãng tại Iris Beauty với giá tốt nhất.">
+    <meta name="keywords"
+        content="Yehwadam, bộ dưỡng da, trắng da, trẻ hóa da, mỹ phẩm cao cấp, mỹ phẩm chính hãng, skincare, Iris Beauty">
+    <meta name="author" content="Iris Beauty">
+    <meta property="og:title" content="Bộ Dưỡng Trắng Trẻ Hóa Da Yehwadam - Mỹ Phẩm Cao Cấp">
+    <meta property="og:description"
+        content="Khám phá Bộ Dưỡng Trắng Trẻ Hóa Da Yehwadam với công thức từ thảo dược tự nhiên. Chính hãng, giá tốt tại Iris Beauty.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://irisbeauty.vn/san-pham/bo-duong-trang-tre-hoa-da-yehwadam.html">
+    <meta property="og:image"
+        content="https://myphamthefaceshop.com/wp-content/uploads/2021/06/bo-duong-trang-tre-hoa-da-yehwadam-hwansaenggo-rejuvenating-radiance-special-set-6sp.jpg">
+    <meta property="og:site_name" content="Iris Beauty">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Product Detail CSS -->
+    <link rel="stylesheet" href="assets/css/product-detail.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Playfair Display', serif;">
+                    <img src="assets/images/LOGO01.png" alt="Iris Beauty" height="40"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">SPA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopmypham.html" target="_blank">MỸ PHẨM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopnuochoa.html" target="_blank">NƯỚC HOA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-primary me-2">
+                            <i class="fas fa-user"></i> Tài khoản
+                        </a>
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <section class="py-3 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Trang chủ</a></li>
+                        <li class="breadcrumb-item">
+                            <a :href="item.category_id == 3 ? 'shopnuochoa.html' : 'shopmypham.html'" class="text-decoration-none">
+                                ${item.category_name}
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a :href="'shopmypham.html?filter='+item.brand" class="text-decoration-none">
+                                ${item.brand}
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">${item.name}</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Product Detail Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Product Gallery -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="product-gallery">
+                            <div class="position-relative mb-3">
+                                <div class="product-badge">Hot</div>
+                                <img :src="'https://www.irisbeauty.asia/'+item.images[0]"
+                                    alt="Bộ Dưỡng Trắng Trẻ Hóa Da Yehwadam" class="img-fluid main-image w-100"
+                                    id="main-image">
+                            </div>
+
+                            <!-- Thumbnail Gallery -->
+                            <div class="row g-2">
+                                <div class="col-4" v-for="img in item.images">
+                                    <img :src="'https://www.irisbeauty.asia/'+img" alt="View 1"
+                                        class="img-fluid thumbnail active w-100" onclick="changeMainImage(this.src)">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-lg-6">
+                        <div class="product-info">
+                            <!-- Brand -->
+                            <div class="mb-2">
+                                <span class="badge bg-light text-dark">${item.name} by ${item.brand}</span>
+                            </div>
+
+                            <!-- Product Title -->
+                            <h1 class="display-5 fw-bold mb-3"
+                                style="font-family: 'Playfair Display', serif; color: #6f42c1;">
+                                ${item.name}
+                            </h1>
+
+                            <!-- Rating -->
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rating-stars me-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-muted">(4.9/5 - 284 đánh giá)</span>
+                            </div>
+
+                            <!-- Short Description -->
+                            <p class="lead mb-4">
+                                ${item.short_description}
+                            </p>
+
+                            <!-- Price Section -->
+                            <div class="price-section">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <span class="current-price">${formatprice(item.price1)}₫</span>
+                                    <span class="original-price">${formatprice(item.price2)}₫</span>
+                                    <span class="discount-badge">-18%</span>
+                                </div>
+                                <p class="text-muted mb-0">
+                                    <i class="fas fa-truck me-1"></i>
+                                    Miễn phí vận chuyển cho đơn hàng trên 500.000₫
+                                </p>
+                            </div>
+
+                            <!-- Quantity and Add to Cart -->
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-4">
+                                    <label class="form-label fw-bold">Số lượng:</label>
+                                    <div class="quantity-selector">
+                                        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                                        <input type="number" class="quantity-input" value="1" min="1" id="quantity">
+                                        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <button class="btn btn-add-cart text-white w-100 mb-2">
+                                        <i class="fas fa-shopping-cart me-2"></i>
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                    <button class="btn btn-outline-danger w-100">
+                                        <i class="fas fa-heart me-2"></i>
+                                        Yêu thích
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Product Features -->
+                            <div class="product-features p-4">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="feature-icon mx-auto">
+                                            <i class="fas fa-leaf"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Tự nhiên</h6>
+                                        <small class="text-muted">Thảo dược Hàn Quốc</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="feature-icon mx-auto">
+                                            <i class="fas fa-shipping-fast"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Giao nhanh</h6>
+                                        <small class="text-muted">1-2 ngày</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="feature-icon mx-auto">
+                                            <i class="fas fa-award"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Chính hãng</h6>
+                                        <small class="text-muted">100% authentic</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Share Product -->
+                            <div class="share-product mt-4">
+                                <h6 class="fw-bold mb-3">Chia sẻ sản phẩm:</h6>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-info btn-sm">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm">
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-success btn-sm">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Details Tabs -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <ul class="nav nav-pills justify-content-center mb-4" id="product-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="pill"
+                            data-bs-target="#description" type="button" role="tab">
+                            Mô tả sản phẩm
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specifications-tab" data-bs-toggle="pill"
+                            data-bs-target="#specifications" type="button" role="tab">
+                            Thành phần & Công dụng
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews"
+                            type="button" role="tab">
+                            Đánh giá (284)
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="shipping-tab" data-bs-toggle="pill" data-bs-target="#shipping"
+                            type="button" role="tab">
+                            Vận chuyển
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="product-tabsContent">
+                    <!-- Description Tab -->
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <h4 class="fw-bold mb-4" style="color: #6f42c1;">Mô tả chi tiết</h4>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="mb-3">
+                                <div class="mota" v-html="item.description"></div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <h4 class="fw-bold mb-4" style="color: #6f42c1;">Đánh giá khách hàng</h4>
+
+                        <!-- Rating Summary -->
+                        <div class="row mb-5">
+                            <div class="col-md-4">
+                                <div class="text-center border rounded p-4">
+                                    <div class="display-4 fw-bold" style="color: #6f42c1;">4.9</div>
+                                    <div class="rating-stars mb-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="text-muted">284 đánh giá</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="rating-breakdown">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">5★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar bg-warning" style="width: 82%"></div>
+                                        </div>
+                                        <span class="text-muted">233</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">4★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar bg-warning" style="width: 15%"></div>
+                                        </div>
+                                        <span class="text-muted">42</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">3★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar bg-warning" style="width: 2%"></div>
+                                        </div>
+                                        <span class="text-muted">6</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">2★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar bg-warning" style="width: 1%"></div>
+                                        </div>
+                                        <span class="text-muted">2</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">1★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar bg-warning" style="width: 0.5%"></div>
+                                        </div>
+                                        <span class="text-muted">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Individual Reviews -->
+                        <div class="reviews-list">
+                            <div class="review-item border-bottom pb-4 mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Trần Thị Mai</h6>
+                                        <div class="rating-stars small">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">1 tuần trước</small>
+                                </div>
+                                <p class="mb-0">
+                                    Bộ sản phẩm rất tuyệt vời! Da tôi trắng hơn rõ rệt sau 2 tuần sử dụng.
+                                    Đặc biệt là kem mắt, giúp giảm quầng thâm và nếp nhăn.
+                                    Mùi hương thơm nhẹ, không gây kích ứng. Sẽ mua tiếp!
+                                </p>
+                            </div>
+
+                            <div class="review-item border-bottom pb-4 mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Nguyễn Phước An</h6>
+                                        <div class="rating-stars small">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">3 ngày trước</small>
+                                </div>
+                                <p class="mb-0">
+                                    Đã dùng rất nhiều sản phẩm trước đây nhưng bộ này thực sự ấn tượng.
+                                    Da không bị khô căng như trước, ẩm mịn hơn hẳn.
+                                    Giao hàng nhanh, đóng gói cẩn thận. Giá cả hợp lý cho chất lượng.
+                                </p>
+                            </div>
+
+                            <div class="review-item pb-4 mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Lê Minh Châu</h6>
+                                        <div class="rating-stars small">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">5 ngày trước</small>
+                                </div>
+                                <p class="mb-0">
+                                    Sản phẩm tốt, hiệu quả rõ ràng. Tuy nhiên mình thấy hơi nặng mùi so với sở thích cá
+                                    nhân.
+                                    Nhưng da thì cải thiện rất nhiều, mịn màng và sáng hơn trước.
+                                    Sẽ tiếp tục sử dụng để xem kết quả lâu dài.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-outline-primary">Xem thêm đánh giá</button>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Tab -->
+                    <div class="tab-pane fade" id="shipping" role="tabpanel">
+                        <h4 class="fw-bold mb-4" style="color: #6f42c1;">Thông tin vận chuyển</h4>
+
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <h6 class="fw-bold mb-3">Phương thức vận chuyển</h6>
+                                <div class="shipping-method mb-3 p-3 border rounded">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">Giao hàng tiêu chuẩn</h6>
+                                            <small class="text-muted">2-3 ngày làm việc</small>
+                                        </div>
+                                        <span class="fw-bold">25.000₫</span>
+                                    </div>
+                                </div>
+                                <div class="shipping-method mb-3 p-3 border rounded">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">Giao hàng nhanh</h6>
+                                            <small class="text-muted">1 ngày làm việc</small>
+                                        </div>
+                                        <span class="fw-bold">40.000₫</span>
+                                    </div>
+                                </div>
+                                <div class="shipping-method mb-3 p-3 border rounded bg-light">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">Miễn phí vận chuyển</h6>
+                                            <small class="text-muted">Đơn hàng từ 500.000₫</small>
+                                        </div>
+                                        <span class="fw-bold text-success">Miễn phí</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h6 class="fw-bold mb-3">Chính sách đổi trả</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Đổi trả trong vòng 15 ngày
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Sản phẩm chưa sử dụng, còn nguyên tem seal
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Miễn phí đổi trả với lỗi từ nhà sản xuất
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Hoàn tiền 100% nếu có phản ứng dị ứng
+                                    </li>
+                                </ul>
+
+                                <div class="alert alert-warning mt-4">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>
+                                    <strong>Lưu ý:</strong> Mỹ phẩm chỉ được đổi trả khi chưa mở seal,
+                                    để đảm bảo an toàn và vệ sinh cho khách hàng.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="py-5">
+            <div class="container">
+                <h3 class="text-center fw-bold mb-5" style="font-family: 'Playfair Display', serif; color: #6f42c1;">
+                    Sản phẩm mới nhất
+                </h3>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" v-for="product in newproducts" :key="product.id">
+                        <div class="related-product bg-white">
+                            <div class="position-relative">
+                                <a :href="'detailsp.html?id='+product.id">
+                                    <img :src="'https://www.irisbeauty.asia/'+product.images[0]" :alt="product.name"
+                                        class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                                </a>
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <button class="btn btn-sm btn-light rounded-circle">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <a :href="'detailsp.html?id='+product.id" class="text-decoration-none text-dark">
+                                    <h6 class="fw-bold mb-2">${product.name}</h6>
+                                </a>
+                                <div class="rating-stars small mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold" style="color: #6f42c1;">${formatprice(product.price1)}₫</span>
+                                    <a :href="'detailsp.html?id='+product.id" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="mb-3">
+                            <img src="assets/images/LOGO01.png" alt="Iris Beauty" height="50" class="mb-3">
+                            <h5 class="fw-bold" style="font-family: 'Playfair Display', serif;">HỘ KINH DOANH IRIS
+                                BEAUTY
+                            </h5>
+                        </div>
+                        <p class="mb-2"><strong>Giấy CNĐKHKD:</strong> 068197003989</p>
+                        <p class="mb-2"><strong>Ngày cấp:</strong> 25/03/2024</p>
+                        <p class="mb-2"><strong>Nơi cấp:</strong> Phòng Tài chính - Kế hoạch Quận 9, TP. Hồ Chí Minh</p>
+                        <p class="mb-3">Điểm đến cao cấp của bạn cho mỹ phẩm chăm sóc da chính hãng từ các thương hiệu
+                            hàng
+                            đầu thế giới.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-dark"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-youtube fa-lg"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-tiktok fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="fw-bold mb-3">Mua sắm</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="shopmypham.html?filter=skincare" class="text-decoration-none"
+                                    target="_blank">Chăm sóc da</a></li>
+                            <li class="mb-2"><a href="shopmypham.html?filter=serum" class="text-decoration-none"
+                                    target="_blank">Serum</a></li>
+                            <li class="mb-2"><a href="shopmypham.html?filter=cream" class="text-decoration-none"
+                                    target="_blank">Kem dưỡng</a></li>
+                            <li class="mb-2"><a href="shopmypham.html" class="text-decoration-none" target="_blank">Tất
+                                    cả
+                                    sản phẩm</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6 class="fw-bold mb-3">Dịch vụ khách hàng</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="cach-thuc-mua-hang.html" class="text-decoration-none">Cách thức
+                                    mua
+                                    hàng</a></li>
+                            <li class="mb-2"><a href="phuong-thuc-thanh-toan.html" class="text-decoration-none">Phương
+                                    thức
+                                    thanh toán</a></li>
+                            <li class="mb-2"><a href="chinh-sach-bao-mat.html" class="text-decoration-none">Chính sách
+                                    bảo
+                                    mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6 class="fw-bold mb-3">Thông tin liên hệ</h6>
+                        <div class="small">
+                            <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Trụ sở chính: 224/60 đường Dương
+                                Đình Hội, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh</p>
+                            <p class="mb-2"><i class="fas fa-phone me-2"></i> <a href="tel:0965765346"
+                                    class="text-decoration-none text-dark">0965765346</a></p>
+                            <p class="mb-2"><i class="fas fa-envelope me-2"></i> <a
+                                    href="mailto:irisle.beauty@gmail.com"
+                                    class="text-decoration-none text-dark">irisle.beauty@gmail.com</a></p>
+                            <p class="mb-0"><i class="fas fa-clock me-2"></i> Mở cửa: 9:00 - 21:00 (Thứ 2 - CN)</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2024 HỘ KINH DOANH IRIS BEAUTY - Nước Hoa & Mỹ Phẩm Chính Hãng | CNĐKHKD:
+                        068197003989</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Contact Buttons -->
+        <div class="floating-contacts">
+            <!-- Phone Button -->
+            <a href="tel:0965765346" class="floating-btn phone-btn" title="Gọi ngay: 0965765346">
+                <i class="fas fa-phone"></i>
+            </a>
+            <!-- Facebook Button -->
+            <a href="https://facebook.com/irisbeauty" target="_blank" class="floating-btn facebook-btn"
+                title="Chat Facebook">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <!-- Product Detail JavaScript -->
+    <script src="assets/js/product-detail.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            delimiters: ["${", "}"],
+            data: {
+                item: null,
+                newproducts: [],
+            },
+            methods: {
+                formatprice(x) {
+                    return formatprice(x)
+                },
+                getData(id) {
+                    self = this
+                    $.ajax({
+                        url: 'https://www.irisbeauty.asia/api.php?action=product_detail&id=' + id,
+                        type: 'GET',
+                        datatype: 'json',
+                        success: function (data) {
+                            if (data.status == 'success') {
+                                self.item = data.data
+                                // Get new products after item is loaded
+                                self.getNewProducts(self.item.category_id)
+                            }
+                            else {
+                                error()
+                            }
+
+                        }
+                    });
+                },
+                getNewProducts(category_id) {
+                    self = this
+                    $.ajax({
+                        url: 'https://www.irisbeauty.asia/api.php?action=products_by_category&category_id=' + category_id,
+                        type: 'GET',
+                        datatype: 'json',
+                        success: function (data) {
+                            if (data.status == 'success') {
+                                // Reverse the array and get first 4 items
+                                self.newproducts = data.data.reverse().slice(0, 4)
+                            }
+                        }
+                    });
+                },
+
+            },
+            mounted() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const idValue = urlParams.get('id');
+                if (idValue == null) {
+                    error()
+                }
+                this.getData(idValue)
+            }
+        })
+
+        function error() {
+            alert('error')
+            $('#app').hide()
+            return;
+        }
+
+
+        function isNull(check) {
+            if (check == 0 || check == undefined || check == "" || check == null || check.toString().toLowerCase() == "null")
+                return true
+            return false
+        }
+
+        function uuid() {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+        }
+
+        function formatprice(x) {
+            if (isNull(x)) return 0;
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"02b93de976c04d9fb07b4860638a0cb3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
